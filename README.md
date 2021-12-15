@@ -3,6 +3,11 @@
 나의 프로젝트를 Build하는 과정을 적으라는게 어떤식으로 적여야할지 몰라서 전체적인 과정을 적기로 했다. 구현에 대한 자세한 과정은 블로그 post에 올려져 있으니 병행해서 읽어주었으면 한다.
 
 ---
+### 이론들
+git과 github, Markdown, Jekyll과 Ruby, Github Pages과 같은 이론적인 내용들은 블로그 post에 올렸다.
+[블로그 바로가기](https://tldbs0420.github.io/)
+
+---
 ### 테마 적용
 
 영상 4개를 다 보고 나는 제일 먼저 블로그의 테마부터 정하기로 하였다. 블로그의 테마로는 beautiful-jekyll 테마를 골랐다. beautiful-jekyll 테마의 github 링크는 다음과 같다.
