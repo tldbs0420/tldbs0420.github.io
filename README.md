@@ -32,7 +32,7 @@ beautiful-jekyll테마에는 검색 기능, 태그 기능이 처음부터 들어
 ### 댓글 기능 추가
 블로그에 post 글들을 생성하려면 일단 post 레이아웃부터 완성시킬 필요가 있다. 따라서 제일 먼저 댓글 기능을 구현하기로 하였다. 댓글 기능을 구현하는 데에 총 7개의 commit이 발생하였다. 블로그 구조를 파악하는 데에 이해가 필요했고, 이상하게 모든 젬파일들과 모듈파일 등을 추가한 ruby에서 로컬 블로그가 실행되지 않았기 때문에 직접 git repository에 commit하여 확인하는 수 밖에 없었다.
 
-추가한 방법은 블로그 post에 올려두었다 : [바로가기](https://tldbs0420.github.io/2021-12-16-addComment/)
+추가한 방법은 블로그 post에 올려두었다 : [바로가기](https://tldbs0420.github.io/2021-12-16-comment/)
 
 댓글 기능 구현을 끝내고 기존에 있던 테스트용 post말고 직접 테스트를 위한 post를 하나 만들어서 실험해보았다. 그 결과 모든 기능들이 구현된 것을 확인할 수 있었다.
 
@@ -45,7 +45,7 @@ beautiful-jekyll테마에는 검색 기능, 태그 기능이 처음부터 들어
 > https://kim-eun-ji.github.io/etc/2021-05-18-ga/
 https://infiduk.github.io/2019/11/05/google-analytics.html
 
-결론적으로 구현에 성공하여 나의 Google Analytics에 들어가면 조회수 양이 보이며 구현 방법은 post에 올려두었다 : [바로가기](https://tldbs0420.github.io/2021-12-16-GoogleAnalytics/)
+결론적으로 구현에 성공하여 나의 Google Analytics에 들어가면 조회수 양이 보이며 구현 방법은 post에 올려두었다 : [바로가기](https://tldbs0420.github.io/2021-12-16-googleanalytics/)
 
 ---
 ### Favicon 적용
@@ -53,7 +53,7 @@ https://infiduk.github.io/2019/11/05/google-analytics.html
 
 > https://velog.io/@eona1301/Github-Blog-%ED%8C%8C%EB%B9%84%EC%BD%98Favicon-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0
 
-파비콘의 이미지를 고르면서 동시에 테마에서 제공하는 블로그 프로필 이미지도 내 사진으로 변경하였다(조금 부끄럽지만). 블로그 내의 내 사진과 블로그의 Favicon 모두 성공적으로 구현되었다. Favicon 구현 과정은 post에 올려두었다 : [바로가기](https://tldbs0420.github.io/2021-12-16-Favicon/)
+파비콘의 이미지를 고르면서 동시에 테마에서 제공하는 블로그 프로필 이미지도 내 사진으로 변경하였다(조금 부끄럽지만). 블로그 내의 내 사진과 블로그의 Favicon 모두 성공적으로 구현되었다. Favicon 구현 과정은 post에 올려두었다 : [바로가기](https://tldbs0420.github.io/2021-12-16-favicon/)
 
 ---
 ### 마치며
