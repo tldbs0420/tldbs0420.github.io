@@ -253,9 +253,9 @@ plugins:
 
 #Custom vars
 comment:
-	provider:	"disqus"
-	disqus:
-		shortname:	"tldbs0420"
+  provider: "disqus"
+  disqus:
+    shortname: "tldbs0420"
 
 
 # Beautiful Jekyll / Dean Attali
