@@ -16,7 +16,7 @@ Google Analytics를 이용하기 위해 다음 두개의 사이트를 참고했�
 3. 통계 플랫폼 웹으로 선택
 
 Google Analytics에 가입을 하면 관리>데이터 스트림>(이름)>태그하기에 대한 안내> 새로운 온페이지 태그 추가 > '전체 사이트 태그(gtag.js) 웹사이트 작성 도구 또는 CMS에서 호스팅하는 사이트를 사용하는 경우 이 태그 사용' 선택 의 과정을 순서대로 하면 다음과 같은 코드를 얻을 수 있다.
-![gtag](./assets/img/gtag.png)
+![gtag](../assets/img/gtag.png)
 이제 이 내용을 어디에 넣을지가 문제이다. 고민 끝에 메인 화면을 구상하는 home.html에 넣어보기로 하였다. _layouts의 home.html에 다음과 같이 내용을 추가하였다.
 ```
 ...
@@ -32,5 +32,5 @@ Google Analytics에 가입을 하면 관리>데이터 스트림>(이름)>태그�
 </script>
 ```
 이를 적용하고 핸드폰과 컴퓨터 등으로 내 블로그에 접속한 뒤에 Google Analytics를 확인해보았다.
-![googleanalytics](./assets/img/googleanalytics.png)
+![googleanalytics](../assets/img/googleanalytics.png)
 결과는 아주 성공적이었다. 방문했던 사람들의 수를 확인할 수 있었다.
