@@ -20,7 +20,6 @@ Google Analytics에 가입을 하면 관리>데이터 스트림>(이름)>태그�
 이제 이 내용을 어디에 넣을지가 문제이다. 고민 끝에 메인 화면을 구상하는 home.html에 넣어보기로 하였다. _layouts의 home.html에 다음과 같이 내용을 추가하였다.
 ```
 ...
-{% endif %}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R7BE0VSPX3"></script>
