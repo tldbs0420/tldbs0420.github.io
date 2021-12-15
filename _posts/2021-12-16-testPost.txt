@@ -1,0 +1,8 @@
+---
+layout: post
+title: 레이아웃 테스트
+subtitle: 부제목 입력 결과
+tags: [test]
+---
+
+직접 테스트하기 위한 포스트입니다.
