@@ -251,6 +251,13 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+#Custom vars
+comment:
+	provider:	"disqus"
+	disqus:
+		shortname:	"tldbs0420"
+
+
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
