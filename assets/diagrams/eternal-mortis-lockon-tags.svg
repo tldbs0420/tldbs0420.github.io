@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="763" viewBox="0 0 920 763" role="img" aria-labelledby="title desc">
+<title id="title">상태 태그에 따른 락온 회전 우선순위</title><desc id="desc">GA_Player_TargetLock의 실제 기본 태그 설정입니다. 공격 상태에서는 적 방향 회전을 우선하고, 구르기·달리기에서는 카메라는 적을 추적하면서 캐릭터는 이동 방향으로 회전합니다.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#181c19" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<rect width="920" height="763" fill="#181c19"/>
+<g font-family="Pretendard,Noto Sans KR,Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="34" y="35" fill="#eef1e6" font-size="20" font-weight="600" text-anchor="start">상태 태그에 따른 락온 회전 우선순위</text>
+<text x="886" y="35" fill="#a6b29c" font-size="10" font-weight="500" text-anchor="end">SYSTEM / FLOW</text>
+<polyline points="460.0,164 460.0,194.5 460.0,194.5 460.0,225" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="460.0,313 460.0,351.0 230.0,351.0 230.0,389" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="330.0" y="329.0" width="30" height="20" rx="3" fill="#181c19"/>
+<text x="345.0" y="343.0" fill="#a6b29c" font-size="12" font-weight="500" text-anchor="middle">예</text>
+<polyline points="460.0,313 460.0,351.0 690.0,351.0 690.0,389" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="550.0" y="329.0" width="50" height="20" rx="3" fill="#181c19"/>
+<text x="575.0" y="343.0" fill="#a6b29c" font-size="12" font-weight="500" text-anchor="middle">아니오</text>
+<polyline points="690.0,493 690.0,534.0 230.0,534.0 230.0,575" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="445.0" y="512.0" width="30" height="20" rx="3" fill="#181c19"/>
+<text x="460.0" y="526.0" fill="#a6b29c" font-size="12" font-weight="500" text-anchor="middle">예</text>
+<polyline points="690.0,493 690.0,534.0 690.0,534.0 690.0,575" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="665.0" y="512.0" width="50" height="20" rx="3" fill="#181c19"/>
+<text x="690.0" y="526.0" fill="#a6b29c" font-size="12" font-weight="500" text-anchor="middle">아니오</text>
+<rect x="270" y="76" width="380" height="88" rx="8" fill="#273322" stroke="#8fa765"/>
+<text x="460.0" y="111" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">UMortisGA_TargetLock</text>
+<text x="460.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">카메라의 대상 추적과 캐릭터 회전 분리</text>
+<polygon points="288,225 632,225 650,269.0 632,313 288,313 270,269.0" fill="#202720" stroke="#46543e"/>
+<text x="460.0" y="260" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">State.Action.Attacking 보유?</text>
+<text x="460.0" y="284" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">ForceCharacterRotateToTargetTags</text>
+<rect x="40" y="389" width="380" height="88" rx="8" fill="#273322" stroke="#8fa765"/>
+<text x="230.0" y="424" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">적 방향 회전 우선</text>
+<text x="230.0" y="448" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">AttackDirection Warp Target 갱신</text>
+<polygon points="518,389 862,389 880,441.0 862,493 518,493 500,441.0" fill="#202720" stroke="#46543e"/>
+<text x="690.0" y="424" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">구르기 또는 달리기 상태?</text>
+<text x="690.0" y="448" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">Ability.Action.Roll</text>
+<text x="690.0" y="468" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">Ability.Action.Sprint</text>
+<rect x="40" y="575" width="380" height="104" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="230.0" y="610" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">카메라: 적 / 캐릭터: 이동 방향</text>
+<text x="230.0" y="634" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">CameraOnlyLockTags</text>
+<text x="230.0" y="654" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">OrientToMovementTags</text>
+<rect x="500" y="575" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="690.0" y="610" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">카메라와 캐릭터 모두 적 방향</text>
+<text x="690.0" y="634" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">두 상태 태그가 없는 기본 락온</text>
+<path d="M34 714H886" stroke="#313c2d"/>
+<text x="34" y="738" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">State.Action.Attacking이 Roll / Sprint와 동시에 있으면 공격 방향 회전이 우선</text>
+</g></svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="540" viewBox="0 0 920 540" role="img" aria-labelledby="title desc">
+<title id="title">차선 변경 중 남는 횡방향 속도 제어</title><desc id="desc">Enemy.DoEnemyJob()에서 차선 변경 시작과 목표 좌표 통과 시 속도를 보정하고, 변경 후 과도한 속도를 낮춰 목표 차선 주변의 움직임을 유지합니다.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#181c19" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<rect width="920" height="540" fill="#181c19"/>
+<g font-family="Pretendard,Noto Sans KR,Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="34" y="35" fill="#eef1e6" font-size="20" font-weight="600" text-anchor="start">차선 변경 중 남는 횡방향 속도 제어</text>
+<text x="886" y="35" fill="#a6b29c" font-size="10" font-weight="500" text-anchor="end">SYSTEM / FLOW</text>
+<polyline points="420,120.0 500,120.0" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="690.0,164 690.0,193.0 230.0,193.0 230.0,222" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="420,266.0 500,266.0" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="441.0" y="240.0" width="38" height="20" rx="3" fill="#181c19"/>
+<text x="460.0" y="254.0" fill="#a6b29c" font-size="12" font-weight="500" text-anchor="middle">통과</text>
+<polyline points="690.0,310 690.0,339.0 230.0,339.0 230.0,368" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="420,412.0 500,412.0" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="441.0" y="386.0" width="38" height="20" rx="3" fill="#181c19"/>
+<text x="460.0" y="400.0" fill="#a6b29c" font-size="12" font-weight="500" text-anchor="middle">초과</text>
+<rect x="40" y="76" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="230.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">차선 변경 시작</text>
+<text x="230.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">beforeLine / nowLine 비교</text>
+<rect x="500" y="76" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="690.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">linearVelocity 재설정</text>
+<text x="690.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">진행 방향에 맞춰 ±finishPower</text>
+<polygon points="58,222 402,222 420,266.0 402,310 58,310 40,266.0" fill="#202720" stroke="#46543e"/>
+<text x="230.0" y="257" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">목표 좌표 통과</text>
+<text x="230.0" y="281" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">lineChangeFinished 확인</text>
+<rect x="500" y="222" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="690.0" y="257" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">속도 보정 + 상태 갱신</text>
+<text x="690.0" y="281" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">beforeLine = nowLine</text>
+<polygon points="58,368 402,368 420,412.0 402,456 58,456 40,412.0" fill="#202720" stroke="#46543e"/>
+<text x="230.0" y="403" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">변경 후 |velocity.x| &gt; maxPower</text>
+<text x="230.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">beforeLine == nowLine</text>
+<rect x="500" y="368" width="380" height="88" rx="8" fill="#273322" stroke="#8fa765"/>
+<text x="690.0" y="403" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">velocity.normalized 적용</text>
+<text x="690.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">과도한 속력을 낮춤</text>
+<path d="M34 491H886" stroke="#313c2d"/>
+<text x="34" y="515" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">Enemy.cs / DoEnemyJob()의 속도 보정 부분 요약</text>
+</g></svg>

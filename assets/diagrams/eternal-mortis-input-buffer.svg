@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="540" viewBox="0 0 920 540" role="img" aria-labelledby="title desc">
+<title id="title">공격 종료와 다음 행동의 연결</title><desc id="desc">공격 중 입력 허용 구간에서 마지막 입력 태그 하나를 저장하고 공격 어빌리티 종료 시 ASC로 전달한 뒤 버퍼를 비웁니다.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#181c19" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<rect width="920" height="540" fill="#181c19"/>
+<g font-family="Pretendard,Noto Sans KR,Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="34" y="35" fill="#eef1e6" font-size="20" font-weight="600" text-anchor="start">공격 종료와 다음 행동의 연결</text>
+<text x="886" y="35" fill="#a6b29c" font-size="10" font-weight="500" text-anchor="end">SYSTEM / FLOW</text>
+<polyline points="230.0,164 230.0,193.0 230.0,193.0 230.0,222" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="690.0,164 690.0,193.0 690.0,193.0 690.0,222" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="230.0,310 230.0,339.0 460.0,339.0 460.0,368" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="690.0,310 690.0,339.0 460.0,339.0 460.0,368" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="40" y="76" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="230.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">공격 어빌리티 실행</text>
+<text x="230.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">공격 몽타주</text>
+<rect x="500" y="76" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="690.0" y="111" fill="#eef1e6" font-size="17" font-weight="600" text-anchor="middle">UMortisANS_ActivateInputBuffer</text>
+<text x="690.0" y="135" fill="#a6b29c" font-size="12.8" font-weight="400" text-anchor="middle">허용 구간의 Roll / LightAttack / WeaponSkill 입력</text>
+<rect x="40" y="222" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="230.0" y="257" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">공격 어빌리티 종료</text>
+<text x="230.0" y="281" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">예약한 다음 행동 전달 시점</text>
+<rect x="500" y="222" width="380" height="88" rx="8" fill="#273322" stroke="#8fa765"/>
+<text x="690.0" y="257" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">BufferedInputTag</text>
+<text x="690.0" y="281" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">가장 최근 입력 하나 저장</text>
+<rect x="270.0" y="368" width="380" height="88" rx="8" fill="#273322" stroke="#8fa765"/>
+<text x="460.0" y="403" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">ExecuteBufferedAbility()</text>
+<text x="460.0" y="427" fill="#a6b29c" font-size="13.7" font-weight="400" text-anchor="middle">UMortisAbilitySystemComponent로 전달 후 비우기</text>
+<path d="M34 491H886" stroke="#313c2d"/>
+<text x="34" y="515" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">별도의 회복 몽타주는 이동 입력이 들어오면 중단</text>
+</g></svg>

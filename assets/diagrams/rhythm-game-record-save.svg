@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="686" viewBox="0 0 920 686" role="img" aria-labelledby="title desc">
+<title id="title">새 기록이나 갱신된 값이 있을 때 저장</title><desc id="desc">songId, difficulty, gameMode로 기록을 찾고 점수·콤보·정확도를 각각 비교합니다. 새 기록이나 갱신이 있을 때만 JSON에 저장합니다.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#181c19" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<rect width="920" height="686" fill="#181c19"/>
+<g font-family="Pretendard,Noto Sans KR,Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="34" y="35" fill="#eef1e6" font-size="20" font-weight="600" text-anchor="start">새 기록이나 갱신된 값이 있을 때 저장</text>
+<text x="886" y="35" fill="#a6b29c" font-size="10" font-weight="500" text-anchor="end">SYSTEM / FLOW</text>
+<polyline points="230.0,164 230.0,193.0 460.0,193.0 460.0,222" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="690.0,164 690.0,193.0 460.0,193.0 460.0,222" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="460.0,310 460.0,339.0 230.0,339.0 230.0,368" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="326.0" y="317.0" width="38" height="20" rx="3" fill="#181c19"/>
+<text x="345.0" y="331.0" fill="#a6b29c" font-size="12" font-weight="500" text-anchor="middle">있음</text>
+<polyline points="460.0,310 460.0,339.0 690.0,339.0 690.0,368" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="556.0" y="317.0" width="38" height="20" rx="3" fill="#181c19"/>
+<text x="575.0" y="331.0" fill="#a6b29c" font-size="12" font-weight="500" text-anchor="middle">없음</text>
+<polyline points="230.0,456 230.0,485.0 230.0,485.0 230.0,514" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="40" y="76" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="230.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">이번 플레이 결과</text>
+<text x="230.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">점수 / 콤보 / 정확도</text>
+<rect x="500" y="76" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="690.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">기존 PlayRecord 조회</text>
+<text x="690.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">songId / difficulty / gameMode</text>
+<polygon points="288.0,222 632.0,222 650.0,266.0 632.0,310 288.0,310 270.0,266.0" fill="#202720" stroke="#46543e"/>
+<text x="460.0" y="257" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">새 기록 또는 항목별 갱신?</text>
+<text x="460.0" y="281" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">최고 점수·최대 콤보·최고 정확도</text>
+<rect x="40" y="368" width="380" height="88" rx="8" fill="#273322" stroke="#8fa765"/>
+<text x="230.0" y="403" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">RecordRepository</text>
+<text x="230.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">새 기록 추가 / 갱신값 반영</text>
+<rect x="500" y="368" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="690.0" y="403" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">기존 기록 유지</text>
+<text x="690.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">새로 저장하지 않음</text>
+<rect x="40" y="514" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="230.0" y="549" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">records.json 저장</text>
+<text x="230.0" y="573" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">일반 모드 / 댄스 모드 공통</text>
+<path d="M34 637H886" stroke="#313c2d"/>
+<text x="34" y="661" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">음량·커스터마이징 선택값은 PlayerPrefs · JSON 저장 구현은 ChatGPT 도움 활용</text>
+</g></svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="422" viewBox="0 0 920 422" role="img" aria-labelledby="title desc">
+<title id="title">데이터의 상속과 참조를 구분한 구성</title><desc id="desc">ThemeData, NotesData, LineData는 모두 CustomDataSO를 상속합니다. ThemeData가 NotesData를, NotesData가 네 LineData를 참조하는 관계와는 별개입니다.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#181c19" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<rect width="920" height="422" fill="#181c19"/>
+<g font-family="Pretendard,Noto Sans KR,Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="34" y="35" fill="#eef1e6" font-size="20" font-weight="600" text-anchor="start">데이터의 상속과 참조를 구분한 구성</text>
+<text x="886" y="35" fill="#a6b29c" font-size="10" font-weight="500" text-anchor="end">SYSTEM / FLOW</text>
+<polyline points="155,250 155,205 460,205 460,164" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#inheritance)"/>
+<polyline points="460,250 460,205 460,205 460,164" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#inheritance)"/>
+<polyline points="765,250 765,205 460,205 460,164" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#inheritance)"/>
+<polyline points="280,294.0 335,294.0" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<rect x="270.5" y="268.0" width="74" height="20" rx="3" fill="#181c19"/>
+<text x="307.5" y="282.0" fill="#a6b29c" font-size="12" font-weight="500" text-anchor="middle">notes</text>
+<polyline points="585,294.0 640,294.0" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<rect x="587.5" y="268.0" width="50" height="20" rx="3" fill="#181c19"/>
+<text x="612.5" y="282.0" fill="#a6b29c" font-size="12" font-weight="500" text-anchor="middle">× 4</text>
+<rect x="270" y="76" width="380" height="88" rx="8" fill="#273322" stroke="#8fa765"/>
+<text x="460.0" y="111" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">CustomDataSO : ScriptableObject</text>
+<text x="460.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">공통 id / thumbNail</text>
+<rect x="30" y="250" width="250" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="155.0" y="285" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">ThemeData</text>
+<text x="155.0" y="309" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">테마 구성 참조</text>
+<rect x="335" y="250" width="250" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="460.0" y="285" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">NotesData</text>
+<text x="460.0" y="309" fill="#a6b29c" font-size="13.1" font-weight="400" text-anchor="middle">line1 / line2 / line3 / line4</text>
+<rect x="640" y="250" width="250" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="765.0" y="285" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">LineData</text>
+<text x="765.0" y="309" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">note / lineColor</text>
+<path d="M34 373H886" stroke="#313c2d"/>
+<text x="34" y="397" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">빈 삼각형은 상속 · 점선 화살표는 참조 / 호출</text>
+</g></svg>

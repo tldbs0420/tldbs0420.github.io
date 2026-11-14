@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="686" viewBox="0 0 920 686" role="img" aria-labelledby="title desc">
+<title id="title">발판과 캡슐 공간을 모두 통과해야 등반</title><desc id="desc">Line Trace로 바닥을 확인하고 캡슐 Overlap 검사를 통과한 경우에만 올라갑니다. 바닥이 없거나 막히면 매달리기를 유지합니다.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#181c19" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<rect width="920" height="686" fill="#181c19"/>
+<g font-family="Pretendard,Noto Sans KR,Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="34" y="35" fill="#eef1e6" font-size="20" font-weight="600" text-anchor="start">발판과 캡슐 공간을 모두 통과해야 등반</text>
+<text x="886" y="35" fill="#a6b29c" font-size="10" font-weight="500" text-anchor="end">SYSTEM / FLOW</text>
+<polyline points="460.0,164 460.0,193.0 460.0,193.0 460.0,222" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="460.0,310 460.0,339.0 230.0,339.0 230.0,368" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="326.0" y="317.0" width="38" height="20" rx="3" fill="#181c19"/>
+<text x="345.0" y="331.0" fill="#a6b29c" font-size="12" font-weight="500" text-anchor="middle">있음</text>
+<polyline points="460.0,310 460.0,339.0 690.0,339.0 690.0,368" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="556.0" y="317.0" width="38" height="20" rx="3" fill="#181c19"/>
+<text x="575.0" y="331.0" fill="#a6b29c" font-size="12" font-weight="500" text-anchor="middle">없음</text>
+<polyline points="420,412.0 500,412.0" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="441.0" y="386.0" width="38" height="20" rx="3" fill="#181c19"/>
+<text x="460.0" y="400.0" fill="#a6b29c" font-size="12" font-weight="500" text-anchor="middle">막힘</text>
+<polyline points="230.0,456 230.0,485.0 230.0,485.0 230.0,514" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="211.0" y="463.0" width="38" height="20" rx="3" fill="#181c19"/>
+<text x="230.0" y="477.0" fill="#a6b29c" font-size="12" font-weight="500" text-anchor="middle">통과</text>
+<rect x="270.0" y="76" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="460.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">Line Trace</text>
+<text x="460.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">난간 안쪽에서 아래 방향 검사</text>
+<polygon points="288.0,222 632.0,222 650.0,266.0 632.0,310 288.0,310 270.0,266.0" fill="#202720" stroke="#46543e"/>
+<text x="460.0" y="257" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">발판이 있는가?</text>
+<text x="460.0" y="281" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">바닥 높이 확인</text>
+<polygon points="58,368 402,368 420,412.0 402,456 58,456 40,412.0" fill="#202720" stroke="#46543e"/>
+<text x="230.0" y="403" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">캡슐 공간이 비었는가?</text>
+<text x="230.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">바닥 높이 + 캡슐 반높이</text>
+<rect x="500" y="368" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="690.0" y="403" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">매달리기 유지</text>
+<text x="690.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">올라가기 실행하지 않음</text>
+<rect x="40" y="514" width="380" height="88" rx="8" fill="#273322" stroke="#8fa765"/>
+<text x="230.0" y="549" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">ClimbStand로 등반</text>
+<text x="230.0" y="573" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">종료 시 위치·충돌·이동 상태 복구</text>
+<path d="M34 637H886" stroke="#313c2d"/>
+<text x="34" y="661" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">구현 설명을 요약한 개념도</text>
+</g></svg>

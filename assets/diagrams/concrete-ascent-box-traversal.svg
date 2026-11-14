@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="686" viewBox="0 0 920 686" role="img" aria-labelledby="title desc">
+<title id="title">Box 기준점과 공간 검사로 동작 선택</title><desc id="desc">Box 로컬 좌표에서 접근 면과 모서리를 구하고 캡슐 공간을 검사한 결과를 Chooser에 전달합니다.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#181c19" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<rect width="920" height="686" fill="#181c19"/>
+<g font-family="Pretendard,Noto Sans KR,Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="34" y="35" fill="#eef1e6" font-size="20" font-weight="600" text-anchor="start">Box 기준점과 공간 검사로 동작 선택</text>
+<text x="886" y="35" fill="#a6b29c" font-size="10" font-weight="500" text-anchor="end">SYSTEM / FLOW</text>
+<polyline points="230.0,164 230.0,193.0 230.0,193.0 230.0,222" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="690.0,164 690.0,193.0 690.0,193.0 690.0,222" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="420,266.0 500,266.0" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="230.0,310 230.0,339.0 460.0,339.0 460.0,368" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="690.0,310 690.0,339.0 460.0,339.0 460.0,368" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="460.0,456 460.0,485.0 460.0,485.0 460.0,514" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="40" y="76" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="230.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">플레이어 위치</text>
+<text x="230.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">Box 로컬 좌표로 변환</text>
+<rect x="500" y="76" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="690.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">캐릭터 캡슐</text>
+<text x="690.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">반경 / 높이</text>
+<rect x="40" y="222" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="230.0" y="257" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">접근 면 · 앞뒤 모서리</text>
+<text x="230.0" y="281" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">장애물의 기준점 계산</text>
+<rect x="500" y="222" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="690.0" y="257" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">공간과 바닥 검사</text>
+<text x="690.0" y="281" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">진입 공간 / 장애물 위 / 뒤쪽 바닥</text>
+<rect x="270.0" y="368" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="460.0" y="403" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">높이 · 깊이 · 낙차 · 이동 상태</text>
+<text x="460.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">장애물과 캐릭터 조건을 구성</text>
+<rect x="270.0" y="514" width="380" height="88" rx="8" fill="#273322" stroke="#8fa765"/>
+<text x="460.0" y="549" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">Chooser</text>
+<text x="460.0" y="573" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">조건에 맞는 동작 후보 선택</text>
+<path d="M34 637H886" stroke="#313c2d"/>
+<text x="34" y="661" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">구현 설명을 요약한 개념도</text>
+</g></svg>

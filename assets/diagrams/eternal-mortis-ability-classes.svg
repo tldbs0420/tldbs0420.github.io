@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="899" viewBox="0 0 920 899" role="img" aria-labelledby="title desc">
+<title id="title">공통 C++ 기반과 스킬 Blueprint의 확장</title><desc id="desc">공통 어빌리티 기반에서 플레이어 기능을 확장하고, GA_Player_Skill_Base에서 스킬 공통 처리를 묶었습니다. 개별 무기 스킬 BP는 이 클래스를 상속해 동작을 구현합니다.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#181c19" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<rect width="920" height="899" fill="#181c19"/>
+<g font-family="Pretendard,Noto Sans KR,Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="34" y="35" fill="#eef1e6" font-size="20" font-weight="600" text-anchor="start">공통 C++ 기반과 스킬 Blueprint의 확장</text>
+<text x="886" y="35" fill="#a6b29c" font-size="10" font-weight="500" text-anchor="end">SYSTEM / FLOW</text>
+<polyline points="460,225 460,164" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#inheritance)"/>
+<polyline points="460,374 460,313" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#inheritance)"/>
+<polyline points="230,533 230,498 460,498 460,462" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#inheritance)"/>
+<polyline points="690,533 690,498 460,498 460,462" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#inheritance)"/>
+<polyline points="230,727 230,682 690,682 690,637" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#inheritance)"/>
+<polyline points="690,727 690,637" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#inheritance)"/>
+<rect x="270" y="76" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="460.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">UGameplayAbility</text>
+<text x="460.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">Unreal GAS 기반 클래스</text>
+<rect x="270" y="225" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="460.0" y="260" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">UMortisGameplayAbility</text>
+<text x="460.0" y="284" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">공통 활성화 정책 / 어빌리티 기반</text>
+<rect x="270" y="374" width="380" height="88" rx="8" fill="#273322" stroke="#8fa765"/>
+<text x="460.0" y="409" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">UMortisPlayerGameplayAbility</text>
+<text x="460.0" y="433" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">플레이어 정보 / 비용 계산 함수</text>
+<rect x="40" y="533" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="230.0" y="568" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">UMortisGA_TargetLock</text>
+<text x="230.0" y="592" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">C++ · 락온 대상 / 카메라 / 회전</text>
+<rect x="500" y="533" width="380" height="104" rx="8" fill="#273322" stroke="#8fa765"/>
+<text x="690.0" y="568" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">GA_Player_Skill_Base</text>
+<text x="690.0" y="592" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">BP · 공통 비용 / 종료 처리</text>
+<text x="690.0" y="612" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">DoSkillBehaviour로 개별 동작</text>
+<rect x="40" y="727" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="230.0" y="762" fill="#eef1e6" font-size="17.7" font-weight="600" text-anchor="middle">GA_Player_Skill_DarkIronGreatsword</text>
+<text x="230.0" y="786" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">BP · 개별 스킬 동작</text>
+<rect x="500" y="727" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="690.0" y="762" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">GA_Player_Skill_IcyBlade</text>
+<text x="690.0" y="786" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">BP · 개별 스킬 동작</text>
+<path d="M34 850H886" stroke="#313c2d"/>
+<text x="34" y="874" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">빈 삼각형은 파생 → 기반 클래스 · BP는 에셋 이름 표기 (생성 클래스의 _C 생략)</text>
+</g></svg>

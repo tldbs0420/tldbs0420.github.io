@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="686" viewBox="0 0 920 686" role="img" aria-labelledby="title desc">
+<title id="title">기본 피해량과 적중 시 계산 분리</title><desc id="desc">무기와 능력치로 MMC가 BaseDamage를 만들고 ExecutionCalculation이 적중 조건과 저항을 반영합니다. AttributeSet이 IncomingDamage를 처리합니다.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#181c19" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
+<rect width="920" height="686" fill="#181c19"/>
+<g font-family="Pretendard,Noto Sans KR,Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="34" y="35" fill="#eef1e6" font-size="20" font-weight="600" text-anchor="start">기본 피해량과 적중 시 계산 분리</text>
+<text x="886" y="35" fill="#a6b29c" font-size="10" font-weight="500" text-anchor="end">SYSTEM / FLOW</text>
+<polyline points="230.0,164 230.0,193.0 230.0,193.0 230.0,222" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="230.0,326 230.0,347.0 230.0,347.0 230.0,368" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="420,412.0 500,420.0" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="690.0,326 690.0,347.0 690.0,347.0 690.0,368" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="690.0,472 690.0,493.0 690.0,493.0 690.0,514" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="500,558.0 420,558.0" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="40" y="76" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="230.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">무기 · 능력치</text>
+<text x="230.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">공격력 / 힘·기량·지혜 / 보정</text>
+<rect x="40" y="222" width="380" height="104" rx="8" fill="#273322" stroke="#8fa765"/>
+<text x="230.0" y="257" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">UMortisPlayerBaseDamageCalc</text>
+<text x="230.0" y="281" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">UGameplayModMagnitudeCalculation 상속</text>
+<text x="230.0" y="301" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">MMC · 기본 피해량 계산</text>
+<rect x="40" y="368" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="230.0" y="403" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">BaseDamage</text>
+<text x="230.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">여러 공격이 함께 사용하는 값</text>
+<rect x="500" y="222" width="380" height="104" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="690.0" y="257" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">이번 적중의 조건</text>
+<text x="690.0" y="281" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">Data.AttackScale / 공격 종류 태그</text>
+<text x="690.0" y="301" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">피해 보너스 / 대상 저항</text>
+<rect x="500" y="368" width="380" height="104" rx="8" fill="#273322" stroke="#8fa765"/>
+<text x="690.0" y="403" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">UMortisIncomingDamageExecCalc</text>
+<text x="690.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">UGameplayEffectExecutionCalculation 상속</text>
+<text x="690.0" y="447" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">최종 피해량 / 자세 피해량 계산</text>
+<rect x="500" y="514" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="690.0" y="549" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">IncomingDamage</text>
+<text x="690.0" y="573" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">계산 결과 전달</text>
+<rect x="40" y="514" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
+<text x="230.0" y="549" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">UMortisAttributeSet</text>
+<text x="230.0" y="573" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">체력 감소 / 사망 처리</text>
+<path d="M34 637H886" stroke="#313c2d"/>
+<text x="34" y="661" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">구현 설명을 요약한 개념도</text>
+</g></svg>
