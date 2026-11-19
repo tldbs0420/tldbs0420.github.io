@@ -23,10 +23,10 @@
 <text x="230.0" y="281" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">앞쪽 모서리를 기준으로 보정</text>
 <rect x="500" y="222" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
 <text x="690.0" y="257" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">중간 / 통과</text>
-<text x="690.0" y="281" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">장애물과의 위치·회전 보정</text>
+<text x="690.0" y="281" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">장애물과의 위치와 회전 보정</text>
 <rect x="500" y="368" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
 <text x="690.0" y="403" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">끝 / 착지</text>
 <text x="690.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">뒤쪽 모서리와 바닥 높이 반영</text>
 <path d="M34 491H886" stroke="#313c2d"/>
-<text x="34" y="515" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">세 구간의 Warp Target과 Notify 범위를 조정한 개념도 · 실제 재생 길이와 무관</text>
+<text x="34" y="515" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">세 구간의 Warp Target과 Notify 범위를 조정한 개념도 / 실제 재생 길이와 무관</text>
 </g></svg>

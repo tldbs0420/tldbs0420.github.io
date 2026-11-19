@@ -13,12 +13,12 @@
 <polyline points="690.0,472 690.0,493.0 690.0,493.0 690.0,514" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
 <polyline points="500,558.0 420,558.0" fill="none" stroke="#6c8058" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
 <rect x="40" y="76" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
-<text x="230.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">무기 · 능력치</text>
-<text x="230.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">공격력 / 힘·기량·지혜 / 보정</text>
+<text x="230.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">무기 / 능력치</text>
+<text x="230.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">공격력 / 힘, 기량, 지혜 / 보정</text>
 <rect x="40" y="222" width="380" height="104" rx="8" fill="#273322" stroke="#8fa765"/>
 <text x="230.0" y="257" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">UMortisPlayerBaseDamageCalc</text>
 <text x="230.0" y="281" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">UGameplayModMagnitudeCalculation 상속</text>
-<text x="230.0" y="301" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">MMC · 기본 피해량 계산</text>
+<text x="230.0" y="301" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">MMC: 기본 피해량 계산</text>
 <rect x="40" y="368" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
 <text x="230.0" y="403" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">BaseDamage</text>
 <text x="230.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">여러 공격이 함께 사용하는 값</text>

@@ -14,14 +14,14 @@
 <text x="230.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">테스트용 BP</text>
 <text x="230.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">조건을 정해 생성 / 추가 / 장착</text>
 <rect x="500" y="76" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
-<text x="690.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">게임 로직 · UI</text>
+<text x="690.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">게임 로직 / UI</text>
 <text x="690.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">C++ / Blueprint에서 호출</text>
 <rect x="270.0" y="222" width="380" height="88" rx="8" fill="#273322" stroke="#8fa765"/>
 <text x="460.0" y="257" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">Subsystem의 공개 함수</text>
 <text x="460.0" y="281" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">생성 / 추가 / 장착</text>
 <rect x="40" y="368" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
 <text x="230.0" y="403" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">보유 목록 변경 이벤트</text>
-<text x="230.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">추가·제거 → 목록 UI 갱신</text>
+<text x="230.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">추가와 제거 → 목록 UI 갱신</text>
 <rect x="500" y="368" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
 <text x="690.0" y="403" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">장착 슬롯 변경 이벤트</text>
 <text x="690.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">장착 변경 → 슬롯 UI 갱신</text>

@@ -31,5 +31,5 @@
 <text x="760.0" y="319" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">override StartAttack()</text>
 <text x="760.0" y="339" fill="#a6b29c" font-size="13.7" font-weight="400" text-anchor="middle">LOD1 / LOD2 Animator 동시 호출</text>
 <path d="M34 395H886" stroke="#313c2d"/>
-<text x="34" y="419" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">빈 삼각형은 상속 · 점선 화살표는 참조 / 호출</text>
+<text x="34" y="419" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">빈 삼각형은 상속 / 점선 화살표는 참조 / 호출</text>
 </g></svg>

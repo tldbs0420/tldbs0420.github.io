@@ -222,3 +222,68 @@ if ('IntersectionObserver' in window) {
     if (!reducedMotion.matches) playInlineClip(clip);
   });
 }
+
+// Collapse the project contents on small screens so the article starts sooner.
+(() => {
+  const toc = document.querySelector('.detail-toc');
+  const nav = toc && toc.querySelector('.toc-navigation');
+  if (!nav) return;
+  if (!nav.id) nav.id = 'toc-navigation';
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'toc-toggle';
+  button.setAttribute('aria-controls', nav.id);
+  const label = document.createElement('span');
+  const sign = document.createElement('span');
+  sign.setAttribute('aria-hidden', 'true');
+  button.append(label, sign);
+  const setOpen = open => {
+    toc.classList.toggle('toc-open', open);
+    button.setAttribute('aria-expanded', String(open));
+    label.textContent = open ? '목차 접기' : '목차 펼치기';
+    sign.textContent = open ? '−' : '+';
+  };
+  setOpen(false);
+  nav.before(button);
+  button.addEventListener('click', () => setOpen(!toc.classList.contains('toc-open')));
+  nav.addEventListener('click', event => {
+    if (event.target.closest('a') && window.matchMedia('(max-width: 760px)').matches) setOpen(false);
+  });
+})();
+
+// Hero play reel: label the project on screen and respect reduced motion.
+(() => {
+  const reel = document.querySelector('[data-hero-reel]');
+  if (!reel) return;
+  const video = reel.querySelector('video');
+  const link = reel.querySelector('.hero-reel-link');
+  const index = reel.querySelector('.hero-reel-index');
+  const name = reel.querySelector('.hero-reel-name');
+  const segments = [
+    [0, 'eternal-mortis', 'Eternal Mortis'],
+    [3.2, 'concrete-ascent', 'Concrete Ascent'],
+    [6.0, 'section-null', 'Section Null'],
+    [9.0, 'redline-rumble', 'Redline Rumble'],
+    [11.8, 'rhythm-game', '리듬게임 프로젝트'],
+  ];
+  let current = -1;
+  const update = () => {
+    let next = 0;
+    segments.forEach(([start], i) => { if (video.currentTime >= start) next = i; });
+    if (next === current) return;
+    current = next;
+    const [, id, label] = segments[next];
+    link.href = `projects/${id}.html`;
+    index.textContent = `${String(next + 1).padStart(2, '0')} / ${String(segments.length).padStart(2, '0')}`;
+    name.textContent = label;
+  };
+  video.addEventListener('timeupdate', update);
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!reduce.matches) video.play().catch(() => {});
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(([entry]) => {
+      if (reduce.matches) return;
+      if (entry.isIntersecting) video.play().catch(() => {}); else video.pause();
+    }).observe(reel);
+  }
+})();

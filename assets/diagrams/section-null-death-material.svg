@@ -30,5 +30,5 @@
 <text x="690.0" y="403" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">풀 반환</text>
 <text x="690.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">사망 연출 종료</text>
 <path d="M34 491H886" stroke="#313c2d"/>
-<text x="34" y="515" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">교체 대상으로 지정하지 않은 슬롯은 유지 · 같은 템플릿의 Material Instance 공유</text>
+<text x="34" y="515" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">교체 대상으로 지정하지 않은 슬롯은 유지 / 같은 템플릿의 Material Instance 공유</text>
 </g></svg>

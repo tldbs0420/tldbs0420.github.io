@@ -23,17 +23,17 @@
 <text x="460.0" y="433" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">플레이어 정보 / 비용 계산 함수</text>
 <rect x="40" y="533" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
 <text x="230.0" y="568" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">UMortisGA_TargetLock</text>
-<text x="230.0" y="592" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">C++ · 락온 대상 / 카메라 / 회전</text>
+<text x="230.0" y="592" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">C++: 락온 대상 / 카메라 / 회전</text>
 <rect x="500" y="533" width="380" height="104" rx="8" fill="#273322" stroke="#8fa765"/>
 <text x="690.0" y="568" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">GA_Player_Skill_Base</text>
-<text x="690.0" y="592" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">BP · 공통 비용 / 종료 처리</text>
+<text x="690.0" y="592" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">BP: 공통 비용 / 종료 처리</text>
 <text x="690.0" y="612" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">DoSkillBehaviour로 개별 동작</text>
 <rect x="40" y="727" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
 <text x="230.0" y="762" fill="#eef1e6" font-size="17.7" font-weight="600" text-anchor="middle">GA_Player_Skill_DarkIronGreatsword</text>
-<text x="230.0" y="786" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">BP · 개별 스킬 동작</text>
+<text x="230.0" y="786" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">BP: 개별 스킬 동작</text>
 <rect x="500" y="727" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
 <text x="690.0" y="762" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">GA_Player_Skill_IcyBlade</text>
-<text x="690.0" y="786" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">BP · 개별 스킬 동작</text>
+<text x="690.0" y="786" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">BP: 개별 스킬 동작</text>
 <path d="M34 850H886" stroke="#313c2d"/>
-<text x="34" y="874" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">빈 삼각형은 파생 → 기반 클래스 · BP는 에셋 이름 표기 (생성 클래스의 _C 생략)</text>
+<text x="34" y="874" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">빈 삼각형은 파생 → 기반 클래스 / BP는 에셋 이름 표기 (생성 클래스의 _C 생략)</text>
 </g></svg>

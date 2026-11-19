@@ -35,7 +35,7 @@
 <text x="690.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">라인별 노트 데이터</text>
 <rect x="40" y="368" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
 <text x="230.0" y="403" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">Preview.cs / Update()</text>
-<text x="230.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">선택값 조회 → 이미지·색상 갱신</text>
+<text x="230.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">선택값 조회 → 이미지와 색상 갱신</text>
 <path d="M34 491H886" stroke="#313c2d"/>
 <text x="34" y="515" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">테마 전체 적용과 개별 설정 모두 PlayerCustomize의 선택값을 변경</text>
 </g></svg>

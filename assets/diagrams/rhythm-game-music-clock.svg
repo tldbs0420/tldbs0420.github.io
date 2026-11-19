@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="540" viewBox="0 0 920 540" role="img" aria-labelledby="title desc">
-<title id="title">음악 시간 하나로 판정과 위치 보정 연결</title><desc id="desc">FMOD 채널의 재생 위치와 싱크 설정을 기준으로 판정 오차와 생성·배속 변경 시 노트 위치를 계산합니다. 평상시 화면 이동은 Time.deltaTime으로 처리합니다.</desc>
+<title id="title">음악 시간 하나로 판정과 위치 보정 연결</title><desc id="desc">FMOD 채널의 재생 위치와 싱크 설정을 기준으로 판정 오차, 생성과 배속 변경 시 노트 위치를 계산합니다. 평상시 화면 이동은 Time.deltaTime으로 처리합니다.</desc>
 <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
 <defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#181c19" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
 <rect width="920" height="540" fill="#181c19"/>
@@ -26,5 +26,5 @@
 <text x="690.0" y="403" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">노트 위치 다시 계산</text>
 <text x="690.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">노트 생성 / 배속 변경 시 적용</text>
 <path d="M34 491H886" stroke="#313c2d"/>
-<text x="34" y="515" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">평상시 노트 이동은 Time.deltaTime 사용 · 판정·이동 구조는 참고 프로젝트 활용</text>
+<text x="34" y="515" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">평상시 노트 이동은 Time.deltaTime 사용 / 판정과 이동 구조는 참고 프로젝트 활용</text>
 </g></svg>

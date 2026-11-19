@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko" data-theme="green">
+<html lang="ko" data-accent="green">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,8 +8,15 @@
     <meta property="og:title" content="박시윤 / 게임 클라이언트 개발자">
     <meta property="og:description" content="함께 만드는 게임을 끝까지 완성하는 게임 클라이언트 개발자를 지향합니다. 박시윤의 소개와 Unreal Engine / Unity 프로젝트를 담았습니다.">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://tldbs0420.github.io/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
     <title>박시윤 / 게임 클라이언트 개발자</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
     <link rel="stylesheet" href="assets/style.css">
     <script src="assets/main.js" defer></script>
   </head>
@@ -18,7 +25,7 @@
     <a class="skip-link" href="#main">본문으로 이동</a>
     <header class="site-header">
       <div class="header-identity">
-        <a class="brand" href="index.html" aria-label="박시윤 홈"><img class="brand-photo" src="assets/media/profile.png" alt="" width="40" height="40"><span>tldbs0420<span class="brand-sub">GAME CLIENT DEVELOPER</span></span></a>
+        <a class="brand" href="index.html" aria-label="박시윤 홈"><img class="brand-photo" src="assets/media/profile.webp" alt="" width="40" height="40"><span>박시윤<span class="brand-sub">GAME CLIENT DEVELOPER</span></span></a>
         <div class="header-contact-block">
           <a class="header-contact" href="mailto:shoon0420@naver.com" title="shoon0420@naver.com로 이메일 보내기">Contact Me <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></a>
           <span class="header-email">shoon0420@naver.com</span>
@@ -31,22 +38,22 @@
             <button class="project-menu-toggle" type="button" aria-expanded="false" aria-controls="project-dropdown" aria-label="프로젝트 바로가기 목록 열기"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.4"/></svg></button>
           </div>
           <div class="project-dropdown" id="project-dropdown" hidden>
-            <span class="eyebrow">SELECTED PROJECTS / 05</span>
+            <span class="eyebrow">SELECTED PROJECTS</span>
             <ul>
               <li>
-                <a href="projects/eternal-mortis.html" ><span class="nav-project-number">01</span><span><strong>Eternal Mortis</strong><small>Unreal / 로그라이트 / 소울라이크</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
+                <a href="projects/eternal-mortis.html" ><span><strong>Eternal Mortis</strong><small>Unreal / 로그라이트 / 소울라이크</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
               </li>
               <li>
-                <a href="projects/concrete-ascent.html" ><span class="nav-project-number">02</span><span><strong>Concrete Ascent</strong><small>Unreal / 3인칭 파쿠르</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
+                <a href="projects/concrete-ascent.html" ><span><strong>Concrete Ascent</strong><small>Unreal / 3인칭 파쿠르</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
               </li>
               <li>
-                <a href="projects/section-null.html" ><span class="nav-project-number">03</span><span><strong>Section Null</strong><small>Unity / FPS 좀비 디펜스</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
+                <a href="projects/section-null.html" ><span><strong>Section Null</strong><small>Unity / FPS 좀비 디펜스</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
               </li>
               <li>
-                <a href="projects/redline-rumble.html" ><span class="nav-project-number">04</span><span><strong>Redline Rumble</strong><small>Unity / 캐주얼 레이싱</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
+                <a href="projects/redline-rumble.html" ><span><strong>Redline Rumble</strong><small>Unity / 캐주얼 레이싱</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
               </li>
               <li>
-                <a href="projects/rhythm-game.html" ><span class="nav-project-number">05</span><span><strong>리듬게임 프로젝트</strong><small>Unity / 리듬 게임</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
+                <a href="projects/rhythm-game.html" ><span><strong>리듬게임 프로젝트</strong><small>Unity / 리듬 게임</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
               </li>
             </ul>
             <a class="dropdown-all" href="index.html#projects">전체 프로젝트 보기 <span aria-hidden="true">↗</span></a>
@@ -71,21 +78,35 @@
             <span><img src="assets/icons/csharp.svg" alt="" width="23" height="23">C#</span>
           </div>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <span class="hero-visual-top">FROM LOGIC TO PLAY</span>
-          <img src="assets/hero.svg" alt="" width="720" height="720">
-          <div class="visual-coordinate">X 014.00<br>Y 032.00<br>Z 008.00</div>
-          <div class="visual-note"><span class="tiny-cross">+</span> BUILD. PLAY. REFINE.</div>
+        <div class="hero-visual">
+          <figure class="hero-reel" data-hero-reel>
+            <span class="hero-reel-tag">PLAY REEL</span>
+            <video muted loop playsinline preload="metadata" poster="assets/media/play-reel-poster.jpg" aria-label="다섯 프로젝트의 플레이 장면 모음" width="800" height="450">
+              <source src="assets/media/play-reel.mp4" type="video/mp4">
+            </video>
+            <figcaption><a class="hero-reel-link" href="projects/eternal-mortis.html"><span class="hero-reel-index">01 / 05</span><span class="hero-reel-name">Eternal Mortis</span><span aria-hidden="true">↗</span></a></figcaption>
+          </figure>
         </div>
-        <div class="hero-bottom">
-          <a href="#projects">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
-        </div>
+        <ul class="hero-facts">
+          <li>
+            <strong>5</strong>
+            <span>완성한 프로젝트</span>
+          </li>
+          <li>
+            <strong>2</strong>
+            <span>팀장을 맡은 팀 프로젝트</span>
+          </li>
+          <li>
+            <strong>2</strong>
+            <span>itch.io 배포</span>
+          </li>
+        </ul>
       </section>
       <section class="profile-section section" id="about" aria-labelledby="profile-heading">
         <div class="profile-visual">
           <div class="portrait-frame">
             <div class="profile-portrait">
-              <img class="portrait-image" src="assets/media/profile.png" alt="박시윤 프로필 사진" width="800" height="800" loading="lazy">
+              <img class="portrait-image" src="assets/media/profile.webp" alt="박시윤 프로필 사진" width="800" height="800" loading="lazy">
             </div>
             <span class="portrait-cross portrait-cross-top" aria-hidden="true">+</span>
             <span class="portrait-cross portrait-cross-bottom" aria-hidden="true">+</span>
@@ -96,13 +117,13 @@
           </div>
         </div>
         <div class="profile-copy">
-          <span class="eyebrow">01 / ABOUT ME</span>
+          <span class="eyebrow">ABOUT ME</span>
           <p class="profile-greeting">안녕하세요, 박시윤입니다.</p>
           <h2 id="profile-heading">함께 만드는 게임을,<br>끝까지 완성합니다<span class="accent">.</span></h2>
-          <p class="profile-education">국민대학교 소프트웨어학부 / 4학년 · 현재 학점 4.39</p>
+          <p class="profile-education">국민대학교 소프트웨어학부 / 4학년 / 현재 학점 4.39</p>
           <div class="profile-description">
-            <p>Unreal Engine을 주력으로 게임 클라이언트 개발을 공부하고 있습니다. Unity와 Unreal Engine으로 다양한 게임을 만들며, 원하는 플레이를 구현하고 기능을 하나의 게임으로 연결해 왔습니다.</p>
-            <p>팀에서 문제가 생기면 먼저 대화하고, 함께 완성할 수 있는 범위와 우선순위를 다시 맞춥니다. 맡은 기능의 구현을 넘어, 팀원들의 작업이 게임 안에서 잘 이어지는지 살피는 개발자가 되고 싶습니다.</p>
+            <p>Unreal Engine을 주력으로 게임 클라이언트 개발을 공부하고 있습니다. Unity와 Unreal Engine으로 다섯 개의 게임을 만들며 플레이어 조작, 전투, 게임 진행 시스템을 주로 맡았습니다.</p>
+            <p>팀에 문제가 생기면 먼저 이야기를 꺼내고, 끝까지 완성할 수 있는 범위와 우선순위를 다시 맞춥니다. 제가 맡은 기능뿐 아니라 팀원들의 작업이 게임 안에서 잘 맞물리는지도 살피는 개발자가 되고 싶습니다.</p>
           </div>
           <div class="profile-keywords">
             <span>완성을 향한 책임감</span>
@@ -130,19 +151,18 @@
       </section>
       <section class="about section work-section" id="how-i-work" aria-labelledby="work-heading">
         <div class="about-intro">
-          <span class="eyebrow">02 / HOW I WORK</span>
-          <h2 id="work-heading">함께 완성하기 위해,<br>먼저 움직입니다.</h2>
-          <p>완성까지 가는 과정에는 구현뿐 아니라 선택과 조율이 필요했습니다. 여러 프로젝트에서 겪은 경험을 바탕으로, 다음과 같은 방식으로 일합니다.</p>
+          <span class="eyebrow">HOW I WORK</span>
+          <h2 id="work-heading">함께 완성하기 위해<br>이렇게 일합니다.</h2>
+          <p>게임을 완성하려면 구현만큼 선택과 조율도 필요했습니다. 프로젝트를 하며 지켜 온 세 가지 방식입니다.</p>
         </div>
         <div class="approaches">
           <article>
-            <span class="principle-number">01</span>
             <div>
               <h3>핵심을 지키며 완성합니다.</h3>
-              <p>목표와 일정에 맞춰 우선순위를 정하고, 필요한 기능을 끝까지 연결합니다.</p>
-              <p class="work-example"><strong>Eternal Mortis</strong>에서는 팀원들과 전투·무기·아이템·보스를 중심으로 범위를 조정해 캡스톤 전시회용 데모를 완성했습니다.</p>
-              <p class="work-example"><strong>Redline Rumble</strong>에서는 주행·변속·차량 AI·경찰 추격을 연결하고, 일반 레이스와 무한 모드까지 구현했습니다.</p>
-              <p class="principle-result">캡스톤 우수상·itch.io 배포 / 두 가지 레이스 모드 완성</p>
+              <p>목표와 일정에 맞춰 우선순위를 정하고, 꼭 필요한 기능부터 끝까지 완성합니다.</p>
+              <p class="work-example"><strong>Eternal Mortis</strong>에서는 전시 데모를 준비하던 중 포스터와 보고서 마감이 겹쳤습니다. 팀원들과 회의해 전투, 무기, 아이템, 보스 같은 핵심은 남기고 패링과 상점 주인 전투는 제외해 데모를 완성했습니다.</p>
+              <p class="work-example"><strong>Redline Rumble</strong>에서는 주행, 변속, 차량 AI, 경찰 추격을 연결하고, 일반 레이스와 무한 모드까지 구현했습니다.</p>
+              <p class="principle-result">캡스톤 우수상, itch.io 배포 / 두 가지 레이스 모드 완성</p>
               <div class="principle-projects">
                 <a class="principle-project" href="projects/eternal-mortis.html">Eternal Mortis <span aria-hidden="true">↗</span></a>
                 <a class="principle-project" href="projects/redline-rumble.html">Redline Rumble <span aria-hidden="true">↗</span></a>
@@ -150,13 +170,12 @@
             </div>
           </article>
           <article>
-            <span class="principle-number">02</span>
             <div>
               <h3>막힌 지점은 먼저 대화합니다.</h3>
-              <p>함께 완성할 수 있는 범위를 맞추고, 서로의 기능이 연결되는 방식을 먼저 정합니다.</p>
-              <p class="work-example"><strong>Section Null</strong>에서는 개발에 어려움을 겪는 팀원과 특수 좀비를 제외하기로 합의하고 이동 경로와 역할을 조정했습니다. 함수와 컴포넌트의 연결 방식을 맞춰 게임 흐름으로 통합했습니다.</p>
+              <p>팀원이 완성할 수 있는 범위를 함께 정하고, 기능을 붙이기 전에 호출 방식부터 맞춥니다.</p>
+              <p class="work-example"><strong>Section Null</strong>에서는 작업이 일주일가량 멈춘 팀원을 따로 만나, 범위를 줄이면 완성할 수 있는지 물었습니다. 함께 특수 좀비를 제외하기로 정하고 이동 경로와 역할을 조정했습니다.</p>
               <p class="work-example"><strong>Eternal Mortis</strong>에서는 초기 UML을 함께 설계하고, Subsystem의 공개 함수와 변경 이벤트를 공유해 팀원의 UI와 게임 진행 코드를 연결했습니다.</p>
-              <p class="principle-result">역할·범위 조정 / 함수·이벤트 기반 기능 통합</p>
+              <p class="principle-result">역할과 범위 조정 / 함수와 이벤트 기반 기능 통합</p>
               <div class="principle-projects">
                 <a class="principle-project" href="projects/section-null.html">Section Null <span aria-hidden="true">↗</span></a>
                 <a class="principle-project" href="projects/eternal-mortis.html">Eternal Mortis <span aria-hidden="true">↗</span></a>
@@ -164,13 +183,12 @@
             </div>
           </article>
           <article>
-            <span class="principle-number">03</span>
             <div>
               <h3>필요한 기술은 직접 배웁니다.</h3>
-              <p>원하는 플레이를 구현하기 위해 새로운 기술을 익히고, 참고한 구조도 목적에 맞게 바꿉니다.</p>
-              <p class="work-example"><strong>Concrete Ascent</strong>에서는 Motion Matching 학습을 목표로 GASP를 분석하고, Motion Warping을 활용하여 Box 기반 파쿠르 판정·매달려 이동하기를 구현했습니다.</p>
-              <p class="work-example"><strong>리듬게임 프로젝트</strong>에서는 AudioSource 사용 시 판정 타이밍이 일정하지 않게 느껴져 FMOD를 조사하고 적용했습니다. 음악 재생 위치를 판정과 노트 위치 보정의 기준으로 연결했습니다.</p>
-              <p class="principle-result">Motion Matching·애니메이션 학습 / FMOD 조사·적용</p>
+              <p>만들고 싶은 플레이에 필요한 기술은 직접 찾아 익히고, 참고한 코드도 목적에 맞게 고쳐 씁니다.</p>
+              <p class="work-example"><strong>Concrete Ascent</strong>에서는 Motion Matching을 배우기 위해 GASP를 분석하고, Motion Warping으로 Box 기반 파쿠르 판정과 매달려 이동하기를 구현했습니다.</p>
+              <p class="work-example"><strong>리듬게임 프로젝트</strong>에서는 AudioSource로 재생할 때 판정 타이밍이 들쭉날쭉하게 느껴져 FMOD를 조사해 적용했습니다. 음악 재생 위치를 판정과 노트 위치 보정의 기준으로 삼았습니다.</p>
+              <p class="principle-result">Motion Matching과 애니메이션 학습 / FMOD 조사와 적용</p>
               <div class="principle-projects">
                 <a class="principle-project" href="projects/concrete-ascent.html">Concrete Ascent <span aria-hidden="true">↗</span></a>
                 <a class="principle-project" href="projects/rhythm-game.html">리듬게임 프로젝트 <span aria-hidden="true">↗</span></a>
@@ -182,7 +200,7 @@
       <section class="projects section" id="projects">
         <div class="section-heading">
           <div>
-            <span class="eyebrow">03 / SELECTED PROJECTS</span>
+            <span class="eyebrow">SELECTED PROJECTS</span>
             <h2>만들고, 연결하고,<br>다듬어 온 게임들<span class="accent">.</span></h2>
           </div>
           <p>직접 맡은 구현과 문제를 해결한 과정을 담았습니다.<br>자세한 기술 설명과 코드는 각 GitHub에서 볼 수 있습니다.</p>
@@ -205,17 +223,17 @@
             </a>
             <div class="project-info">
               <div class="project-meta">
-                <span>01 / 4인 팀 / 팀장</span>
+                <span class="project-type">4인 팀 / 팀장</span>
                 <span>2026.02.07 ~ 2026.07.20</span>
               </div>
               <h3><a href="projects/eternal-mortis.html">Eternal Mortis</a></h3>
-              <p>무기와 룬의 조합으로 전투 방식이 달라지는 3인칭 액션 게임. GAS 기반 플레이어 조작과 전투를 구현하고, 락온·입력 버퍼·Motion Warping으로 전투 흐름을 다듬었습니다. 아이템과 인벤토리는 Subsystem으로 구성했습니다.</p>
+              <p>무기와 룬 조합에 따라 전투 방식이 달라지는 3인칭 액션 게임입니다. GAS로 플레이어 조작과 전투를 구현하고, 락온, 입력 버퍼, Motion Warping으로 원하는 방향으로 공격이 이어지게 했습니다. 아이템과 인벤토리는 Subsystem으로 분리했습니다.</p>
               <div class="project-highlights">
                 <a href="https://expo.cs.kookmin.ac.kr/results/" target="_blank" rel="noopener noreferrer">캡스톤 디자인 우수상 <span aria-hidden="true">↗</span></a>
                 <a href="https://ssutte.itch.io/eternal-mortis" target="_blank" rel="noopener noreferrer">itch.io 배포 <span aria-hidden="true">↗</span></a>
               </div>
               <div class="tags">
-                <span>플레이어 조작 · 전투</span>
+                <span>플레이어 조작 / 전투</span>
                 <span>GAS</span>
                 <span>Subsystem</span>
               </div>
@@ -231,7 +249,7 @@
             </a>
             <div class="project-info">
               <div class="project-meta">
-                <span>02 / 개인 프로젝트</span>
+                <span class="project-type">개인 프로젝트</span>
                 <span>2026.05.10 ~ 2026.06.14</span>
               </div>
               <h3><a href="projects/concrete-ascent.html">Concrete Ascent</a></h3>
@@ -253,11 +271,11 @@
             </a>
             <div class="project-info">
               <div class="project-meta">
-                <span>03 / 4인 팀 / 팀장</span>
+                <span class="project-type">4인 팀 / 팀장</span>
                 <span>2025.09.22 ~ 2025.12.13</span>
               </div>
               <h3><a href="projects/section-null.html">Section Null</a></h3>
-              <p>세 지역의 감염체를 파괴하고 기지를 방어하는 FPS. 게임 진행과 기능 통합을 맡고, Animator와 사망 효과를 컴포넌트로 연결했습니다.</p>
+              <p>세 지역의 감염체를 파괴하고 기지를 지키는 FPS입니다. 게임 진행과 기능 통합을 맡았고, Animator와 사망 연출은 팀원이 바로 쓸 수 있는 컴포넌트로 만들었습니다.</p>
               <div class="project-highlights">
                 <a href="https://ssutte.itch.io/section-null" target="_blank" rel="noopener noreferrer">itch.io 배포 <span aria-hidden="true">↗</span></a>
               </div>
@@ -278,11 +296,11 @@
             </a>
             <div class="project-info">
               <div class="project-meta">
-                <span>04 / 개인 프로젝트 / 모작</span>
+                <span class="project-type">개인 프로젝트 / 모작</span>
                 <span>2025.03.09 ~ 2025.08.13</span>
               </div>
               <h3><a href="projects/redline-rumble.html">Redline Rumble</a></h3>
-              <p>수동 변속과 차선 경쟁, 경찰 추격 이벤트를 구현한 레이싱 모작. 상대 속도와 반복되는 도로를 바탕으로 주행 흐름을 구성했습니다.</p>
+              <p>수동 변속, 차선 경쟁, 경찰 추격을 구현한 레이싱 모작입니다. 도로를 반복 배치하고 주변 차량에 상대 속도를 적용해 달리는 느낌을 냈습니다.</p>
               <div class="tags">
                 <span>C#</span>
                 <span>차량 AI</span>
@@ -300,11 +318,11 @@
             </a>
             <div class="project-info">
               <div class="project-meta">
-                <span>05 / 개인 프로젝트</span>
+                <span class="project-type">개인 프로젝트</span>
                 <span></span>
               </div>
               <h3><a href="projects/rhythm-game.html">리듬게임 프로젝트</a></h3>
-              <p>일반 모드와 댄스 모드를 지원하는 Unity 리듬게임. 롱노트 점수 처리, FMOD 연동, 테마와 라인별 커스터마이징, JSON 기록 저장을 구현했습니다.</p>
+              <p>일반 모드와 댄스 모드가 있는 Unity 리듬게임입니다. 롱노트 점수 처리, FMOD 연동, 테마와 라인별 커스터마이징, JSON 기록 저장을 구현했습니다.</p>
               <div class="tags">
                 <span>C#</span>
                 <span>FMOD</span>

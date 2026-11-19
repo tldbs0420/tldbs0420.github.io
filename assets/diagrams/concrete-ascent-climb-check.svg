@@ -33,7 +33,7 @@
 <text x="690.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">올라가기 실행하지 않음</text>
 <rect x="40" y="514" width="380" height="88" rx="8" fill="#273322" stroke="#8fa765"/>
 <text x="230.0" y="549" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">ClimbStand로 등반</text>
-<text x="230.0" y="573" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">종료 시 위치·충돌·이동 상태 복구</text>
+<text x="230.0" y="573" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">종료 시 위치, 충돌, 이동 상태 복구</text>
 <path d="M34 637H886" stroke="#313c2d"/>
 <text x="34" y="661" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">구현 설명을 요약한 개념도</text>
 </g></svg>

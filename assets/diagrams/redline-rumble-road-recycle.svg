@@ -32,5 +32,5 @@
 <text x="690.0" y="403" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">같은 구간을 전방에 재배치</text>
 <text x="690.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">도로를 이어서 사용</text>
 <path d="M34 491H886" stroke="#313c2d"/>
-<text x="34" y="515" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">무한 모드는 진행에 따라 차량·경찰 등장 간격을 줄임</text>
+<text x="34" y="515" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">무한 모드는 진행에 따라 차량과 경찰 등장 간격을 줄임</text>
 </g></svg>

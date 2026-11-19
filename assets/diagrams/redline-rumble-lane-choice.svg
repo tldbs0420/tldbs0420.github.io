@@ -20,7 +20,7 @@
 <rect x="653.0" y="463.0" width="74" height="20" rx="3" fill="#181c19"/>
 <text x="690.0" y="477.0" fill="#a6b29c" font-size="12" font-weight="500" text-anchor="middle">모두 막힘</text>
 <rect x="270.0" y="76" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
-<text x="460.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">차선별 장애물 · 플레이어 감지</text>
+<text x="460.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">차선별 장애물 / 플레이어 감지</text>
 <text x="460.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">차선의 통행 가능 여부 확인</text>
 <polygon points="288.0,222 632.0,222 650.0,266.0 632.0,310 288.0,310 270.0,266.0" fill="#202720" stroke="#46543e"/>
 <text x="460.0" y="257" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">플레이어 차선이 비었는가?</text>

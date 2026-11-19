@@ -26,5 +26,5 @@
 <text x="230.0" y="329" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">GetLedgeMoveSegment()</text>
 <text x="230.0" y="349" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">난간 중심 / 이동 방향 / 절반 길이</text>
 <path d="M34 409H886" stroke="#313c2d"/>
-<text x="34" y="433" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">빈 삼각형은 상속 · 점선 화살표는 참조 / 호출</text>
+<text x="34" y="433" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">빈 삼각형은 상속 / 점선 화살표는 참조 / 호출</text>
 </g></svg>

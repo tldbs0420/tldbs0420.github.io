@@ -28,5 +28,5 @@
 <text x="765.0" y="285" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">LineData</text>
 <text x="765.0" y="309" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">note / lineColor</text>
 <path d="M34 373H886" stroke="#313c2d"/>
-<text x="34" y="397" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">빈 삼각형은 상속 · 점선 화살표는 참조 / 호출</text>
+<text x="34" y="397" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">빈 삼각형은 상속 / 점선 화살표는 참조 / 호출</text>
 </g></svg>

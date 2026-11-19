@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="763" viewBox="0 0 920 763" role="img" aria-labelledby="title desc">
-<title id="title">상태 태그에 따른 락온 회전 우선순위</title><desc id="desc">GA_Player_TargetLock의 실제 기본 태그 설정입니다. 공격 상태에서는 적 방향 회전을 우선하고, 구르기·달리기에서는 카메라는 적을 추적하면서 캐릭터는 이동 방향으로 회전합니다.</desc>
+<title id="title">상태 태그에 따른 락온 회전 우선순위</title><desc id="desc">GA_Player_TargetLock의 실제 기본 태그 설정입니다. 공격 상태에서는 적 방향 회전을 우선하고, 구르기와 달리기에서는 카메라는 적을 추적하면서 캐릭터는 이동 방향으로 회전합니다.</desc>
 <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
 <defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#181c19" stroke="#6c8058" stroke-width="1.5"/></marker></defs>
 <rect width="920" height="763" fill="#181c19"/>

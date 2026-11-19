@@ -1,15 +1,22 @@
 <!doctype html>
-<html lang="ko" data-theme="green">
+<html lang="ko" data-accent="green">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="GASP를 바탕으로 이동 애니메이션을 구성하고, Box 기반 파쿠르 판정과 난간 이동, Motion Warping을 C++ 중심으로 구현했습니다.">
     <meta name="theme-color" content="#141518">
-    <meta property="og:title" content="Concrete Ascent / tldbs0420">
+    <meta property="og:title" content="Concrete Ascent / 박시윤">
     <meta property="og:description" content="GASP를 바탕으로 이동 애니메이션을 구성하고, Box 기반 파쿠르 판정과 난간 이동, Motion Warping을 C++ 중심으로 구현했습니다.">
     <meta property="og:type" content="website">
-    <title>Concrete Ascent / tldbs0420</title>
+    <meta property="og:image" content="https://tldbs0420.github.io/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Concrete Ascent / 박시윤</title>
     <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
     <link rel="stylesheet" href="../assets/style.css">
     <script src="../assets/main.js" defer></script>
   </head>
@@ -18,7 +25,7 @@
     <a class="skip-link" href="#main">본문으로 이동</a>
     <header class="site-header">
       <div class="header-identity">
-        <a class="brand" href="../index.html" aria-label="박시윤 홈"><img class="brand-photo" src="../assets/media/profile.png" alt="" width="40" height="40"><span>tldbs0420<span class="brand-sub">GAME CLIENT DEVELOPER</span></span></a>
+        <a class="brand" href="../index.html" aria-label="박시윤 홈"><img class="brand-photo" src="../assets/media/profile.webp" alt="" width="40" height="40"><span>박시윤<span class="brand-sub">GAME CLIENT DEVELOPER</span></span></a>
         <div class="header-contact-block">
           <a class="header-contact" href="mailto:shoon0420@naver.com" title="shoon0420@naver.com로 이메일 보내기">Contact Me <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></a>
           <span class="header-email">shoon0420@naver.com</span>
@@ -31,22 +38,22 @@
             <button class="project-menu-toggle" type="button" aria-expanded="false" aria-controls="project-dropdown" aria-label="프로젝트 바로가기 목록 열기"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.4"/></svg></button>
           </div>
           <div class="project-dropdown" id="project-dropdown" hidden>
-            <span class="eyebrow">SELECTED PROJECTS / 05</span>
+            <span class="eyebrow">SELECTED PROJECTS</span>
             <ul>
               <li>
-                <a href="../projects/eternal-mortis.html" ><span class="nav-project-number">01</span><span><strong>Eternal Mortis</strong><small>Unreal / 로그라이트 / 소울라이크</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
+                <a href="../projects/eternal-mortis.html" ><span><strong>Eternal Mortis</strong><small>Unreal / 로그라이트 / 소울라이크</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
               </li>
               <li>
-                <a href="../projects/concrete-ascent.html" aria-current="page"><span class="nav-project-number">02</span><span><strong>Concrete Ascent</strong><small>Unreal / 3인칭 파쿠르</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
+                <a href="../projects/concrete-ascent.html" aria-current="page"><span><strong>Concrete Ascent</strong><small>Unreal / 3인칭 파쿠르</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
               </li>
               <li>
-                <a href="../projects/section-null.html" ><span class="nav-project-number">03</span><span><strong>Section Null</strong><small>Unity / FPS 좀비 디펜스</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
+                <a href="../projects/section-null.html" ><span><strong>Section Null</strong><small>Unity / FPS 좀비 디펜스</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
               </li>
               <li>
-                <a href="../projects/redline-rumble.html" ><span class="nav-project-number">04</span><span><strong>Redline Rumble</strong><small>Unity / 캐주얼 레이싱</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
+                <a href="../projects/redline-rumble.html" ><span><strong>Redline Rumble</strong><small>Unity / 캐주얼 레이싱</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
               </li>
               <li>
-                <a href="../projects/rhythm-game.html" ><span class="nav-project-number">05</span><span><strong>리듬게임 프로젝트</strong><small>Unity / 리듬 게임</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
+                <a href="../projects/rhythm-game.html" ><span><strong>리듬게임 프로젝트</strong><small>Unity / 리듬 게임</small></span><span class="nav-project-arrow" aria-hidden="true">↗</span></a>
               </li>
             </ul>
             <a class="dropdown-all" href="../index.html#projects">전체 프로젝트 보기 <span aria-hidden="true">↗</span></a>
@@ -62,9 +69,9 @@
         <a class="back-link" href="../index.html#projects">← 모든 프로젝트</a>
         <div class="detail-heading">
           <div>
-            <span class="eyebrow">PROJECT 02 / 3인칭 파쿠르</span>
+            <span class="eyebrow">3인칭 파쿠르</span>
             <h1>Concrete Ascent</h1>
-            <p class="detail-tagline">공간을 읽고,<br>동작을 연결합니다.</p>
+            <p class="detail-tagline">애니메이션을 배우기 위해,<br>GASP를 뜯어보는 것부터.</p>
           </div>
           <div class="detail-overview">
             <p>GASP를 바탕으로 이동 애니메이션을 구성하고, Box 기반 파쿠르 판정과 난간 이동, Motion Warping을 C++ 중심으로 구현했습니다.</p>
@@ -233,7 +240,7 @@
             <a class="problem-detail-link" href="#case-3-2">구현 과정 자세히 보기 <span aria-hidden="true">↓</span></a>
           </section>
           <section class="case-section" id="case-1">
-            <span class="eyebrow">01 / MOTION MATCHING</span>
+            <span class="eyebrow">MOTION MATCHING</span>
             <h2>Motion Matching 구성과 조정</h2>
             <p class="case-lead">이동 데이터를 연결하고, 실제로 선택되는 포즈와 전환 시점을 확인했습니다.</p>
             <article class="implementation-block" id="case-1-1">
@@ -270,7 +277,7 @@ void UConcreteAscentAnimInstance::GetGaitFromPlayer()
     Gait = OwnerCharacter-&gt;GetGait();
 }</code></pre>
                     <div class="code-example-footer">
-                      <span>두 함수 원본 발췌 · 중간 NativeUpdateAnimation() 생략 · 들여쓰기 정리</span>
+                      <span>두 함수 원본 발췌 / 중간 NativeUpdateAnimation() 생략 / 들여쓰기 정리</span>
                       <a href="https://github.com/tldbs0420/ConcreteAscent-Portfolio/blob/9e3447e373bc4d6d7f4470dad41420e6a89ee6f5/Source/ConcreteAscent/Private/Player/Animation/ConcreteAscentAnimInstance.cpp#L11-L31" target="_blank" rel="noopener noreferrer">ConcreteAscentAnimInstance.cpp 원문 보기 ↗</a>
                     </div>
                   </div>
@@ -294,14 +301,14 @@ void UConcreteAscentAnimInstance::GetGaitFromPlayer()
             </article>
           </section>
           <section class="case-section" id="case-2">
-            <span class="eyebrow">02 / TRAVERSAL</span>
+            <span class="eyebrow">TRAVERSAL</span>
             <h2>Box 기반 판정과 Motion Warping</h2>
             <p class="case-lead">장애물의 모서리와 공간 검사 결과를 동작 선택 및 위치 보정에 사용했습니다.</p>
             <article class="implementation-block" id="case-2-1">
               <h3><span class="block-number">2-1</span>Box Component로 장애물의 기준점 계산</h3>
               <div class="implementation-copy">
                 <p>장애물의 기준점을 간단히 계산하기 위해 <strong>Spline 대신 Box Component</strong>를 사용했습니다. 플레이어 위치를 Box 로컬 좌표로 변환해 접근 면과 앞뒤 모서리를 구했습니다.</p>
-                <p>캡슐 크기로 진입 공간과 장애물 위, 뒤쪽 바닥을 검사했습니다. 높이 / 깊이 / 낙차와 이동 상태를 Chooser에 전달해 가능한 동작을 선택했습니다.</p>
+                <p>캡슐 크기로 진입 공간과 장애물 위, 뒤쪽 바닥을 검사했습니다. 높이, 깊이, 낙차와 이동 상태를 Chooser에 전달해 가능한 동작을 선택했습니다.</p>
               </div>
               <figure class="implementation-image is-diagram">
                 <a class="image-fullsize" href="../assets/diagrams/concrete-ascent-box-traversal.svg" target="_blank" rel="noopener noreferrer" aria-label="Box Component로 장애물의 기준점 계산 이미지 크게 보기 (새 탭)"><img src="../assets/diagrams/concrete-ascent-box-traversal.svg" alt="Box 로컬 좌표에서 접근 면과 모서리를 구하고 캡슐 공간을 검사한 결과를 Chooser에 전달합니다." loading="lazy" decoding="async" width="920" height="686"><span>크게 보기 ↗</span></a>
@@ -319,7 +326,7 @@ void UConcreteAscentAnimInstance::GetGaitFromPlayer()
                       <span>ParkourObstacleBase.cpp</span>
                       <span>C++</span>
                     </div>
-                    <p>Box 로컬 좌표에서 구한 NormalizedX와 NormalizedY를 비교해 접근 면을 고릅니다. X축 면에 접근한 경우 좌우 위치를 Box 범위 안으로 제한하고, 높이는 Box의 윗면에 맞춰 앞·뒤 모서리를 계산합니다.</p>
+                    <p>Box 로컬 좌표에서 구한 NormalizedX와 NormalizedY를 비교해 접근 면을 고릅니다. X축 면에 접근한 경우 좌우 위치를 Box 범위 안으로 제한하고, 높이는 Box의 윗면에 맞춰 앞뒤 모서리를 계산합니다.</p>
                     <pre tabindex="0" aria-label="ParkourObstacleBase.cpp 코드 발췌"><code class="language-cpp">if (NormalizedX &gt;= NormalizedY)
 {
     const float SignX = LocalActorLocation.X &gt;= 0.f ? 1.f : -1.f;
@@ -333,7 +340,7 @@ void UConcreteAscentAnimInstance::GetGaitFromPlayer()
     BackLedgeLocal = FVector(-SignX * BoxExtent.X, ClampedY, BoxExtent.Z);
 }</code></pre>
                     <div class="code-example-footer">
-                      <span>GetTraversalLedgeData_Implementation()의 X축 면 처리 발췌 · 앞선 좌표 변환·변수 선언과 Y축 분기 생략</span>
+                      <span>GetTraversalLedgeData_Implementation()의 X축 면 처리 발췌 / 앞선 좌표 변환, 변수 선언과 Y축 분기 생략</span>
                       <a href="https://github.com/tldbs0420/ConcreteAscent-Portfolio/blob/9e3447e373bc4d6d7f4470dad41420e6a89ee6f5/Source/ConcreteAscent/Private/Objects/Obstacle/ParkourObstacleBase.cpp#L84-L95" target="_blank" rel="noopener noreferrer">ParkourObstacleBase.cpp 원문 보기 ↗</a>
                     </div>
                   </div>
@@ -345,7 +352,7 @@ void UConcreteAscentAnimInstance::GetGaitFromPlayer()
               <div class="implementation-copy">
                 <p>기존 파쿠르는 캐릭터에 추가된 attach 본으로 장애물에 맞는 진입 포즈를 검색했습니다. 가상 본으로 대체하려 했지만 원하는 방식으로 해결되지 않았고, 캐릭터 에셋이 바뀔 때마다 본을 추가하는 작업은 비효율적이라고 판단했습니다.</p>
                 <p>그래서 <strong>파쿠르 진입 포즈 검색을 생략하고 PoseSearchBranchIn Notify가 있으면 종료 시점부터 몽타주를 재생</strong>하도록 변경했습니다. Chooser의 유효 후보 중 첫 몽타주를 선택하고, 이후 장애물에 맞출 위치와 회전은 Motion Warping으로 보정했습니다.</p>
-                <p>위치가 어긋나는 구간은 <strong>시작 / 중간 / 끝으로 나누어 Warp Target과 Notify 범위</strong>를 조정했습니다. 앞·뒤 모서리와 실제 바닥 높이를 기준으로 접근, 통과, 착지를 각각 확인하며 자연스럽게 연결되도록 맞췄습니다.</p>
+                <p>위치가 어긋나는 구간은 <strong>시작, 중간, 끝으로 나누어 Warp Target과 Notify 범위</strong>를 조정했습니다. 앞뒤 모서리와 실제 바닥 높이를 기준으로 접근, 통과, 착지를 각각 확인해 동작이 끊기지 않게 맞췄습니다.</p>
               </div>
               <figure class="implementation-image is-diagram">
                 <a class="image-fullsize" href="../assets/diagrams/concrete-ascent-warp-stages.svg" target="_blank" rel="noopener noreferrer" aria-label="파쿠르 진입 방식과 위치 보정 이미지 크게 보기 (새 탭)"><img src="../assets/diagrams/concrete-ascent-warp-stages.svg" alt="Chooser의 첫 유효 몽타주에서 PoseSearchBranchIn 종료 시점 이후를 재생하고 시작, 중간, 끝의 Warp Target과 Notify 범위를 조정합니다." loading="lazy" decoding="async" width="920" height="540"><span>크게 보기 ↗</span></a>
@@ -372,7 +379,7 @@ CurrentTraversalResult.PlayRate = 1.f;
 OutResult = CurrentTraversalResult;
 return true;</code></pre>
                     <div class="code-example-footer">
-                      <span>StartTraversal() 후반부 원본 발췌 · 앞선 유효성 검사 생략</span>
+                      <span>StartTraversal() 후반부 원본 발췌 / 앞선 유효성 검사 생략</span>
                       <a href="https://github.com/tldbs0420/ConcreteAscent-Portfolio/blob/9e3447e373bc4d6d7f4470dad41420e6a89ee6f5/Source/ConcreteAscent/Private/Player/Components/ParkourTraversalComponent.cpp#L139-L149" target="_blank" rel="noopener noreferrer">ParkourTraversalComponent.cpp 원문 보기 ↗</a>
                     </div>
                   </div>
@@ -381,7 +388,7 @@ return true;</code></pre>
                       <span>ConcreteAscentCharacter.cpp</span>
                       <span>C++</span>
                     </div>
-                    <p>파쿠르 검사에 성공하면 결과를 저장하고 이동 상태를 전환합니다. 장애물의 앞·뒤 모서리와 바닥에 맞춰 Warp Target을 갱신한 다음, 앞서 계산한 StartTime부터 몽타주를 재생합니다.</p>
+                    <p>파쿠르 검사에 성공하면 결과를 저장하고 이동 상태를 전환합니다. 장애물의 앞뒤 모서리와 바닥에 맞춰 Warp Target을 갱신한 다음, 앞서 계산한 StartTime부터 몽타주를 재생합니다.</p>
                     <pre tabindex="0" aria-label="ConcreteAscentCharacter.cpp 코드 발췌"><code class="language-cpp">if (ParkourTraversalComponent-&gt;StartTraversal(TraversalResult))
 {
     CurrentTraversalResult = TraversalResult;
@@ -395,7 +402,7 @@ return true;</code></pre>
     EndTraversal();
 }</code></pre>
                     <div class="code-example-footer">
-                      <span>Jump()의 파쿠르 시작 분기 원본 발췌 · 앞선 공중 매달리기 검사와 이후 일반 점프 생략</span>
+                      <span>Jump()의 파쿠르 시작 분기 원본 발췌 / 앞선 공중 매달리기 검사와 이후 일반 점프 생략</span>
                       <a href="https://github.com/tldbs0420/ConcreteAscent-Portfolio/blob/9e3447e373bc4d6d7f4470dad41420e6a89ee6f5/Source/ConcreteAscent/Private/Player/ConcreteAscentCharacter.cpp#L551-L562" target="_blank" rel="noopener noreferrer">ConcreteAscentCharacter.cpp 원문 보기 ↗</a>
                     </div>
                   </div>
@@ -404,14 +411,14 @@ return true;</code></pre>
             </article>
           </section>
           <section class="case-section" id="case-3">
-            <span class="eyebrow">03 / LEDGE MOVEMENT</span>
+            <span class="eyebrow">LEDGE MOVEMENT</span>
             <h2>매달려 이동하기</h2>
             <p class="case-lead">난간을 잡은 뒤 이동, 등반, 떨어지기로 이어지는 행동을 구성했습니다.</p>
             <article class="implementation-block" id="case-3-1">
               <h3><span class="block-number">3-1</span>난간 잡기와 좌우 이동</h3>
               <div class="implementation-copy">
                 <p>공중에서 난간을 잡으면 캐릭터 위치를 난간 축에 투영해 Offset을 구합니다. 캡슐 반경을 반영해 이동 범위를 제한하고, <strong>좌우 이동 몽타주의 길이에 맞춰 위치를 보간</strong>했습니다.</p>
-                <p>벽과의 간격 및 캐릭터 높이를 보정하고 이동 중에만 Tick을 활성화했습니다. 손을 놓으면 몽타주 / 타이머 / Warp Target을 정리한 뒤 Falling으로 전환합니다.</p>
+                <p>벽과의 간격 및 캐릭터 높이를 보정하고 이동 중에만 Tick을 활성화했습니다. 손을 놓으면 몽타주, 타이머, Warp Target을 정리한 뒤 Falling으로 전환합니다.</p>
               </div>
               <figure class="implementation-image">
                 <div class="clip-stage">
@@ -453,7 +460,7 @@ LedgeMoveDuration = FMath::Max(LedgeMoveDuration, 0.05f);
 bIsLedgeMoving = true;
 SetComponentTickEnabled(true);</code></pre>
                     <div class="code-example-footer">
-                      <span>MoveAlongLedge() 내부 원본 발췌 · 앞선 상태·입력 검사 생략</span>
+                      <span>MoveAlongLedge() 내부 원본 발췌 / 앞선 상태와 입력 검사 생략</span>
                       <a href="https://github.com/tldbs0420/ConcreteAscent-Portfolio/blob/9e3447e373bc4d6d7f4470dad41420e6a89ee6f5/Source/ConcreteAscent/Private/Player/Components/ParkourTraversalComponent.cpp#L254-L274" target="_blank" rel="noopener noreferrer">ParkourTraversalComponent.cpp 원문 보기 ↗</a>
                     </div>
                   </div>
@@ -568,7 +575,7 @@ SetComponentTickEnabled(true);</code></pre>
       </div>
       <section class="next-project section">
         <div>
-          <span class="eyebrow">NEXT PROJECT / 03</span>
+          <span class="eyebrow">NEXT PROJECT</span>
           <h2><a href="section-null.html">Section Null <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.5"/></svg></a></h2>
         </div>
         <a class="back-link" href="../index.html#projects">전체 목록으로 ↗</a>

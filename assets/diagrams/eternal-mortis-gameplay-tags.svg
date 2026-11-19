@@ -48,5 +48,5 @@
 <text x="690.0" y="635" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">취소 처리 없이 종료</text>
 <text x="690.0" y="659" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">Hold 외 입력 또는 활성 항목 없음</text>
 <path d="M34 723H886" stroke="#313c2d"/>
-<text x="34" y="747" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">InputTag.Toggle / InputTag.Hold는 상위 태그로 분류 · 어빌리티 선택은 입력 태그의 정확한 일치 사용</text>
+<text x="34" y="747" fill="#a6b29c" font-size="12" font-weight="400" text-anchor="start">InputTag.Toggle / InputTag.Hold는 상위 태그로 분류 / 어빌리티 선택은 입력 태그의 정확한 일치 사용</text>
 </g></svg>

@@ -19,13 +19,13 @@
 <text x="690.0" y="111" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">캐릭터 캡슐</text>
 <text x="690.0" y="135" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">반경 / 높이</text>
 <rect x="40" y="222" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
-<text x="230.0" y="257" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">접근 면 · 앞뒤 모서리</text>
+<text x="230.0" y="257" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">접근 면 / 앞뒤 모서리</text>
 <text x="230.0" y="281" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">장애물의 기준점 계산</text>
 <rect x="500" y="222" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
 <text x="690.0" y="257" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">공간과 바닥 검사</text>
 <text x="690.0" y="281" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">진입 공간 / 장애물 위 / 뒤쪽 바닥</text>
 <rect x="270.0" y="368" width="380" height="88" rx="8" fill="#202720" stroke="#46543e"/>
-<text x="460.0" y="403" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">높이 · 깊이 · 낙차 · 이동 상태</text>
+<text x="460.0" y="403" fill="#eef1e6" font-size="19" font-weight="600" text-anchor="middle">높이 / 깊이 / 낙차 / 이동 상태</text>
 <text x="460.0" y="427" fill="#a6b29c" font-size="14" font-weight="400" text-anchor="middle">장애물과 캐릭터 조건을 구성</text>
 <rect x="270.0" y="514" width="380" height="88" rx="8" fill="#273322" stroke="#8fa765"/>
 <text x="460.0" y="549" fill="#d6ed9a" font-size="19" font-weight="600" text-anchor="middle">Chooser</text>
