@@ -287,3 +287,56 @@ if ('IntersectionObserver' in window) {
     }).observe(reel);
   }
 })();
+
+// Dark / light theme toggle. Dark is the default; the choice is remembered per browser.
+(() => {
+  const root = document.documentElement;
+  const meta = document.querySelector('meta[name="theme-color"]');
+  // keep the choice when moving between pages, even where localStorage is unavailable
+  const syncLinks = (light) => {
+    document.querySelectorAll('a[href]').forEach((a) => {
+      const raw = a.getAttribute('href');
+      if (!raw || /^(https?:|mailto:|#|\/\/)/.test(raw) || !/\.html/.test(raw)) return;
+      const [path, hash] = raw.split('#');
+      const [file, query = ''] = path.split('?');
+      const params = new URLSearchParams(query);
+      if (light) params.set('theme', 'light'); else params.delete('theme');
+      const q = params.toString();
+      a.setAttribute('href', file + (q ? '?' + q : '') + (hash !== undefined ? '#' + hash : ''));
+    });
+  };
+  // generated diagrams have a light copy in assets/diagrams-light
+  const syncDiagrams = (light) => {
+    document.querySelectorAll('img[src*="assets/diagrams"]').forEach((img) => {
+      const src = img.getAttribute('src');
+      const next = light ? src.replace('assets/diagrams/', 'assets/diagrams-light/')
+                         : src.replace('assets/diagrams-light/', 'assets/diagrams/');
+      if (next !== src) img.setAttribute('src', next);
+    });
+    document.querySelectorAll('a[href*="assets/diagrams"]').forEach((a) => {
+      const href = a.getAttribute('href');
+      a.setAttribute('href', light ? href.replace('assets/diagrams/', 'assets/diagrams-light/')
+                                   : href.replace('assets/diagrams-light/', 'assets/diagrams/'));
+    });
+  };
+  const sync = () => {
+    const light = root.dataset.theme === 'light';
+    syncLinks(light);
+    syncDiagrams(light);
+    if (meta) meta.setAttribute('content', light ? '#f7f7f6' : '#141518');
+    document.querySelectorAll('[data-theme-toggle]').forEach((button) => {
+      const label = light ? '다크 모드로 전환' : '화이트 모드로 전환';
+      button.setAttribute('aria-label', label);
+      button.setAttribute('title', label);
+    });
+  };
+  document.querySelectorAll('[data-theme-toggle]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const light = root.dataset.theme !== 'light';
+      if (light) root.dataset.theme = 'light'; else delete root.dataset.theme;
+      try { localStorage.setItem('theme', light ? 'light' : 'dark'); } catch (e) {}
+      sync();
+    });
+  });
+  sync();
+})();

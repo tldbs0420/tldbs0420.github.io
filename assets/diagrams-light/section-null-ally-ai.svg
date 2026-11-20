@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="1032" viewBox="0 0 920 1032" role="img" aria-labelledby="title desc">
+<title id="title">PlayerAI의 표적 관리, 사격과 회전 처리</title><desc id="desc">감지한 적 목록에서 유효한 표적을 고르고, 루트 회전과 모델 보정 및 사격 코루틴으로 나눠 처리합니다.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#93a77f" stroke-width="1.5"/></marker></defs>
+<defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#f4f5f4" stroke="#93a77f" stroke-width="1.5"/></marker></defs>
+<rect width="920" height="1032" fill="#f4f5f4"/>
+<g font-family="Pretendard,Noto Sans KR,Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="34" y="35" fill="#16190e" font-size="20" font-weight="600" text-anchor="start">PlayerAI의 표적 관리, 사격과 회전 처리</text>
+<text x="886" y="35" fill="#57634d" font-size="10" font-weight="500" text-anchor="end">SYSTEM / FLOW</text>
+<polyline points="460.0,188 460.0,219.0 460.0,219.0 460.0,250" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="460.0,358 460.0,404.0 230.0,404.0 230.0,450" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="193.0" y="391" width="74" height="20" rx="3" fill="#f4f5f4"/>
+<text x="230" y="405" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">유효 표적</text>
+<polyline points="460.0,358 460.0,404.0 690.0,404.0 690.0,450" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="647.0" y="391" width="86" height="20" rx="3" fill="#f4f5f4"/>
+<text x="690" y="405" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">사격 코루틴</text>
+<polyline points="230.0,558 230.0,604.0 230.0,604.0 230.0,650" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="163.0" y="582.0" width="134" height="20" rx="3" fill="#f4f5f4"/>
+<text x="230.0" y="596.0" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">애니메이션 적용 후</text>
+<polyline points="690.0,558 690.0,604.0 690.0,604.0 690.0,650" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="653.0" y="582.0" width="74" height="20" rx="3" fill="#f4f5f4"/>
+<text x="690.0" y="596.0" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">조건 충족</text>
+<polyline points="690.0,758 690.0,799.0 690.0,799.0 690.0,840" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="653.0" y="777.0" width="74" height="20" rx="3" fill="#f4f5f4"/>
+<text x="690.0" y="791.0" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">탄약 소진</text>
+<polyline points="880,894 904,894 904,504 880,504" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="260" y="80" width="400" height="108" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="460.0" y="115" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">감지 범위의 적 목록</text>
+<text x="460.0" y="139" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">OnTriggerEnter / OnTriggerExit</text>
+<text x="460.0" y="159" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">enemies 등록과 제거</text>
+<rect x="260" y="250" width="400" height="108" rx="8" fill="#d1ddcc" stroke="#829a58"/>
+<text x="460.0" y="285" fill="#4e6512" font-size="19" font-weight="600" text-anchor="middle">Update() → currEnemy</text>
+<text x="460.0" y="309" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">사망, 비활성, null 대상 제거</text>
+<text x="460.0" y="329" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">첫 번째 유효 대상 선택</text>
+<rect x="40" y="450" width="380" height="108" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="230.0" y="485" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">루트 회전</text>
+<text x="230.0" y="509" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">표적까지의 수평 방향 계산</text>
+<text x="230.0" y="529" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">Quaternion.Slerp()로 회전</text>
+<polygon points="518,450 862,450 880,504.0 862,558 518,558 500,504.0" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="690.0" y="485" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">KillEnemy()</text>
+<text x="690.0" y="509" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">currEnemy != null</text>
+<text x="690.0" y="529" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">!isReloading</text>
+<rect x="40" y="650" width="380" height="108" rx="8" fill="#d1ddcc" stroke="#829a58"/>
+<text x="230.0" y="685" fill="#4e6512" font-size="19" font-weight="600" text-anchor="middle">LateUpdate() 모델 보정</text>
+<text x="230.0" y="709" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">애니메이션 적용 후</text>
+<text x="230.0" y="729" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">modelRoot.localEulerAngles.y = 0</text>
+<rect x="500" y="650" width="380" height="108" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="690.0" y="685" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">IShooter로 발사</text>
+<text x="690.0" y="709" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">표적 위치 + 높이 Offset</text>
+<text x="690.0" y="729" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">탄약 차감 / 공격 간격 대기</text>
+<rect x="500" y="840" width="380" height="108" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="690.0" y="875" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">Reload()</text>
+<text x="690.0" y="899" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">재장전 동안 사격 차단</text>
+<text x="690.0" y="919" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">시간 경과 후 탄창 보충</text>
+<path d="M34 983H886" stroke="#c7d2c3"/>
+<text x="34" y="1007" fill="#57634d" font-size="12" font-weight="400" text-anchor="start">PlayerAI.cs의 실제 처리 경로 요약 / 회전 갱신과 사격 코루틴은 별도로 실행됩니다.</text>
+</g></svg>

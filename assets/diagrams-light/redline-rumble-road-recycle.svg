@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="540" viewBox="0 0 920 540" role="img" aria-labelledby="title desc">
+<title id="title">도로 재배치와 주변 차량의 상대 이동</title><desc id="desc">플레이어 속도에 맞춰 도로를 뒤로 이동하고 지난 도로를 전방으로 재배치합니다. 주변 차량은 자신의 전진 속도와 도로 후진 속력을 함께 반영합니다.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#93a77f" stroke-width="1.5"/></marker></defs>
+<defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#f4f5f4" stroke="#93a77f" stroke-width="1.5"/></marker></defs>
+<rect width="920" height="540" fill="#f4f5f4"/>
+<g font-family="Pretendard,Noto Sans KR,Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="34" y="35" fill="#16190e" font-size="20" font-weight="600" text-anchor="start">도로 재배치와 주변 차량의 상대 이동</text>
+<text x="886" y="35" fill="#57634d" font-size="10" font-weight="500" text-anchor="end">SYSTEM / FLOW</text>
+<polyline points="230.0,164 230.0,193.0 230.0,193.0 230.0,222" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="690.0,164 690.0,193.0 690.0,193.0 690.0,222" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="420,266.0 500,266.0" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="230.0,310 230.0,339.0 230.0,339.0 230.0,368" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="420,412.0 500,412.0" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="441.0" y="386.0" width="38" height="20" rx="3" fill="#f4f5f4"/>
+<text x="460.0" y="400.0" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">통과</text>
+<rect x="40" y="76" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="230.0" y="111" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">플레이어 속도</text>
+<text x="230.0" y="135" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">도로의 후진 속력 결정</text>
+<rect x="500" y="76" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="690.0" y="111" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">주변 차량의 전진 속도</text>
+<text x="690.0" y="135" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">차량별 이동 속도</text>
+<rect x="40" y="222" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="230.0" y="257" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">도로를 뒤로 이동</text>
+<text x="230.0" y="281" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">지나간 구간 감지</text>
+<rect x="500" y="222" width="380" height="88" rx="8" fill="#d1ddcc" stroke="#829a58"/>
+<text x="690.0" y="257" fill="#4e6512" font-size="19" font-weight="600" text-anchor="middle">주변 차량의 상대 이동</text>
+<text x="690.0" y="281" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">자체 전진 + 도로 후진 반영</text>
+<polygon points="58,368 402,368 420,412.0 402,456 58,456 40,412.0" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="230.0" y="403" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">구간이 뒤로 지나갔는가?</text>
+<text x="230.0" y="427" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">중복 감지 상태 확인</text>
+<rect x="500" y="368" width="380" height="88" rx="8" fill="#d1ddcc" stroke="#829a58"/>
+<text x="690.0" y="403" fill="#4e6512" font-size="19" font-weight="600" text-anchor="middle">같은 구간을 전방에 재배치</text>
+<text x="690.0" y="427" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">도로를 이어서 사용</text>
+<path d="M34 491H886" stroke="#c7d2c3"/>
+<text x="34" y="515" fill="#57634d" font-size="12" font-weight="400" text-anchor="start">무한 모드는 진행에 따라 차량과 경찰 등장 간격을 줄임</text>
+</g></svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="802" viewBox="0 0 920 802" role="img" aria-labelledby="title desc">
+<title id="title">서브시스템의 기반과 책임 분리</title><desc id="desc">무기와 룬의 Database / Inventory는 각각 UGameInstanceSubsystem을 직접 상속합니다. 생성 결과는 보유 목록에 사용하고, 장착 변경 이벤트로 UI와 캐릭터 효과를 갱신합니다.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#93a77f" stroke-width="1.5"/></marker></defs>
+<defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#f4f5f4" stroke="#93a77f" stroke-width="1.5"/></marker></defs>
+<rect width="920" height="802" fill="#f4f5f4"/>
+<g font-family="Pretendard,Noto Sans KR,Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="34" y="35" fill="#16190e" font-size="20" font-weight="600" text-anchor="start">서브시스템의 기반과 책임 분리</text>
+<text x="886" y="35" fill="#57634d" font-size="10" font-weight="500" text-anchor="end">SYSTEM / FLOW</text>
+<polyline points="230,250 230,205 460,205 460,164" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#inheritance)"/>
+<polyline points="690,250 690,205 460,205 460,164" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#inheritance)"/>
+<polyline points="420,304.0 500,304.0" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<rect x="423.0" y="278.0" width="74" height="20" rx="3" fill="#f4f5f4"/>
+<text x="460.0" y="292.0" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">생성 결과</text>
+<polyline points="690.0,358 690.0,404.0 230.0,404.0 230.0,450" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<rect x="417.0" y="382.0" width="86" height="20" rx="3" fill="#f4f5f4"/>
+<text x="460.0" y="396.0" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">변경 이벤트</text>
+<polyline points="690.0,358 690.0,404.0 690.0,404.0 690.0,450" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<rect x="623.0" y="382.0" width="134" height="20" rx="3" fill="#f4f5f4"/>
+<text x="690.0" y="396.0" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">장착 / 세트 변경</text>
+<polyline points="690.0,558 690.0,594.0 690.0,594.0 690.0,630" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="641.0" y="572.0" width="98" height="20" rx="3" fill="#f4f5f4"/>
+<text x="690.0" y="586.0" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">적용 / 제거</text>
+<rect x="270" y="76" width="380" height="88" rx="8" fill="#d1ddcc" stroke="#829a58"/>
+<text x="460.0" y="111" fill="#4e6512" font-size="19" font-weight="600" text-anchor="middle">UGameInstanceSubsystem</text>
+<text x="460.0" y="135" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">GameInstance 수명의 공통 기반</text>
+<rect x="40" y="250" width="380" height="108" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="230.0" y="285" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">Database Subsystem</text>
+<text x="230.0" y="309" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">UMortisWeaponDatabaseSubsystem</text>
+<text x="230.0" y="329" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">UMortisRuneDatabaseSubsystem</text>
+<rect x="500" y="250" width="380" height="108" rx="8" fill="#d1ddcc" stroke="#829a58"/>
+<text x="690.0" y="285" fill="#4e6512" font-size="19" font-weight="600" text-anchor="middle">Inventory Subsystem</text>
+<text x="690.0" y="309" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">UMortisWeaponInventorySubsystem</text>
+<text x="690.0" y="329" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">UMortisRuneInventorySubsystem</text>
+<rect x="40" y="450" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="230.0" y="485" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">UI</text>
+<text x="230.0" y="509" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">목록 / 슬롯 변경 시 표시 갱신</text>
+<rect x="500" y="450" width="380" height="108" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="690.0" y="485" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">UMortisEquipmentComponent</text>
+<text x="690.0" y="509" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">장착 및 세트 변경 이벤트 수신</text>
+<text x="690.0" y="529" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">효과 적용 / 핸들 보관 / 제거</text>
+<rect x="500" y="630" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="690.0" y="665" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">캐릭터의 GAS 효과</text>
+<text x="690.0" y="689" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">현재 장착에 맞춰 GameplayEffect 반영</text>
+<path d="M34 753H886" stroke="#c7d2c3"/>
+<text x="34" y="777" fill="#57634d" font-size="12" font-weight="400" text-anchor="start">빈 삼각형은 상속 / 생성 결과의 전달은 호출 측이 수행 / Equipment는 별도 컴포넌트</text>
+</g></svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="792" viewBox="0 0 920 792" role="img" aria-labelledby="title desc">
+<title id="title">공격 방향에 맞춘 Warp Target 갱신</title><desc id="desc">이동 입력은 카메라 기준 월드 방향을, 락온 중 공격 상태는 대상 방향의 Yaw를 AttackDirection Warp Target에 반영합니다.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#93a77f" stroke-width="1.5"/></marker></defs>
+<defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#f4f5f4" stroke="#93a77f" stroke-width="1.5"/></marker></defs>
+<rect width="920" height="792" fill="#f4f5f4"/>
+<g font-family="Pretendard,Noto Sans KR,Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="34" y="35" fill="#16190e" font-size="20" font-weight="600" text-anchor="start">공격 방향에 맞춘 Warp Target 갱신</text>
+<text x="886" y="35" fill="#57634d" font-size="10" font-weight="500" text-anchor="end">SYSTEM / FLOW</text>
+<polyline points="690.0,188 690.0,224.0 690.0,224.0 690.0,260" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="635.0" y="202.0" width="110" height="20" rx="3" fill="#f4f5f4"/>
+<text x="690.0" y="216.0" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">강제 회전 상태</text>
+<polyline points="230,188 230,395 350,395 350,440" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="175.0" y="286" width="110" height="20" rx="3" fill="#f4f5f4"/>
+<text x="230" y="300" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">이동 입력 방향</text>
+<polyline points="690,368 690,395 570,395 570,440" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="460.0,548 460.0,584.0 460.0,584.0 460.0,620" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="40" y="80" width="380" height="108" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="230.0" y="115" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">Input_Move()</text>
+<text x="230.0" y="139" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">이동 입력 허용 + Dead Zone 통과</text>
+<text x="230.0" y="159" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">카메라 기준 → 월드 이동 방향</text>
+<rect x="500" y="80" width="380" height="108" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="690.0" y="115" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">UMortisGA_TargetLock</text>
+<text x="690.0" y="139" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">락온 대상의 수평 방향 계산</text>
+<text x="690.0" y="159" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">공격 태그의 강제 회전 조건 확인</text>
+<rect x="500" y="260" width="380" height="108" rx="8" fill="#d1ddcc" stroke="#829a58"/>
+<text x="690.0" y="295" fill="#4e6512" font-size="18.3" font-weight="600" text-anchor="middle">UpdateAttackDirectionWarpTarget()</text>
+<text x="690.0" y="319" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">State.Action.Attacking</text>
+<text x="690.0" y="339" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">대상 방향의 Yaw 반영</text>
+<rect x="210" y="440" width="500" height="108" rx="8" fill="#d1ddcc" stroke="#829a58"/>
+<text x="460.0" y="475" fill="#4e6512" font-size="19" font-weight="600" text-anchor="middle">AttackDirection</text>
+<text x="460.0" y="499" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">캐릭터의 현재 위치 + 목표 회전</text>
+<text x="460.0" y="519" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">AddOrUpdateWarpTargetFromTransform()</text>
+<rect x="210" y="620" width="500" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="460.0" y="655" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">공격 모션 방향 보정</text>
+<text x="460.0" y="679" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">입력과 락온 대상에 맞춘 Motion Warping</text>
+<path d="M34 743H886" stroke="#c7d2c3"/>
+<text x="34" y="767" fill="#57634d" font-size="12" font-weight="400" text-anchor="start">MortisPlayerCharacter.cpp / MortisGA_TargetLock.cpp의 실제 갱신 경로를 요약했습니다.</text>
+</g></svg>

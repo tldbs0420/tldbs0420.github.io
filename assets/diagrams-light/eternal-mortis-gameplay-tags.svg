@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="772" viewBox="0 0 920 772" role="img" aria-labelledby="title desc">
+<title id="title">입력 태그에 따른 활성화와 취소</title><desc id="desc">UMortisAbilitySystemComponent는 입력 태그와 어빌리티의 DynamicSpecSourceTags를 정확히 대조합니다. Toggle의 재입력과 Hold의 입력 해제를 서로 다른 함수에서 처리합니다.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#93a77f" stroke-width="1.5"/></marker></defs>
+<defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#f4f5f4" stroke="#93a77f" stroke-width="1.5"/></marker></defs>
+<rect width="920" height="772" fill="#f4f5f4"/>
+<g font-family="Pretendard,Noto Sans KR,Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="34" y="35" fill="#16190e" font-size="20" font-weight="600" text-anchor="start">입력 태그에 따른 활성화와 취소</text>
+<text x="886" y="35" fill="#57634d" font-size="10" font-weight="500" text-anchor="end">SYSTEM / FLOW</text>
+<polyline points="460.0,164 460.0,207.0 240.0,207.0 240.0,250" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="325.0" y="185.0" width="50" height="20" rx="3" fill="#f4f5f4"/>
+<text x="350.0" y="199.0" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">누르기</text>
+<polyline points="460.0,164 460.0,207.0 690.0,207.0 690.0,250" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="556.0" y="185.0" width="38" height="20" rx="3" fill="#f4f5f4"/>
+<text x="575.0" y="199.0" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">놓기</text>
+<polyline points="240.0,358 240.0,399.0 240.0,399.0 240.0,440" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="225.0" y="377.0" width="30" height="20" rx="3" fill="#f4f5f4"/>
+<text x="240.0" y="391.0" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">예</text>
+<polyline points="40,304 18,304 18,644 40,644" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="20.0" y="556" width="50" height="20" rx="3" fill="#f4f5f4"/>
+<text x="45" y="570" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">아니오</text>
+<polyline points="690.0,358 690.0,399.0 690.0,399.0 690.0,440" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="599.0" y="377.0" width="182" height="20" rx="3" fill="#f4f5f4"/>
+<text x="690.0" y="391.0" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">Hold + 일치 + 활성</text>
+<polyline points="880,304 903,304 903,644 880,644" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="845.0" y="556" width="50" height="20" rx="3" fill="#f4f5f4"/>
+<text x="870" y="570" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">아니오</text>
+<rect x="160" y="76" width="600" height="88" rx="8" fill="#d1ddcc" stroke="#829a58"/>
+<text x="460.0" y="111" fill="#4e6512" font-size="19" font-weight="600" text-anchor="middle">UMortisAbilitySystemComponent</text>
+<text x="460.0" y="135" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">DynamicSpecSourceTags.HasTagExact(InputTag)</text>
+<polygon points="58,250 422,250 440,304.0 422,358 58,358 40,304.0" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="240.0" y="285" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">Toggle 계열이며 이미 활성 상태인가?</text>
+<text x="240.0" y="309" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">InputTag.Toggle.LockOn</text>
+<text x="240.0" y="329" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">OnAbilityInputPressed()</text>
+<polygon points="518,250 862,250 880,304.0 862,358 518,358 500,304.0" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="690.0" y="285" fill="#16190e" font-size="16.1" font-weight="600" text-anchor="middle">Hold 계열이며 일치하는 활성 항목이 있는가?</text>
+<text x="690.0" y="309" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">InputTag.Hold.Ability.Sprint</text>
+<text x="690.0" y="329" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">InputTag.Hold.Ability.SuperSprint</text>
+<rect x="40" y="440" width="400" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="240.0" y="475" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">CancelAbilityHandle()</text>
+<text x="240.0" y="499" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">예: 락온을 다시 눌러 취소</text>
+<rect x="500" y="440" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="690.0" y="475" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">CancelAbilityHandle()</text>
+<text x="690.0" y="499" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">일치하는 활성 어빌리티 취소</text>
+<rect x="40" y="600" width="400" height="88" rx="8" fill="#d1ddcc" stroke="#829a58"/>
+<text x="240.0" y="635" fill="#4e6512" font-size="19" font-weight="600" text-anchor="middle">TryActivateAbility()</text>
+<text x="240.0" y="659" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">Toggle 비활성 / Hold 누르기 / 일반 입력</text>
+<rect x="500" y="600" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="690.0" y="635" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">취소 처리 없이 종료</text>
+<text x="690.0" y="659" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">Hold 외 입력 또는 활성 항목 없음</text>
+<path d="M34 723H886" stroke="#c7d2c3"/>
+<text x="34" y="747" fill="#57634d" font-size="12" font-weight="400" text-anchor="start">InputTag.Toggle / InputTag.Hold는 상위 태그로 분류 / 어빌리티 선택은 입력 태그의 정확한 일치 사용</text>
+</g></svg>

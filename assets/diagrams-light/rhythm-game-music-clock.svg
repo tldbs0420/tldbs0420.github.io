@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="540" viewBox="0 0 920 540" role="img" aria-labelledby="title desc">
+<title id="title">음악 시간 하나로 판정과 위치 보정 연결</title><desc id="desc">FMOD 채널의 재생 위치와 싱크 설정을 기준으로 판정 오차, 생성과 배속 변경 시 노트 위치를 계산합니다. 평상시 화면 이동은 Time.deltaTime으로 처리합니다.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#93a77f" stroke-width="1.5"/></marker></defs>
+<defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#f4f5f4" stroke="#93a77f" stroke-width="1.5"/></marker></defs>
+<rect width="920" height="540" fill="#f4f5f4"/>
+<g font-family="Pretendard,Noto Sans KR,Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="34" y="35" fill="#16190e" font-size="20" font-weight="600" text-anchor="start">음악 시간 하나로 판정과 위치 보정 연결</text>
+<text x="886" y="35" fill="#57634d" font-size="10" font-weight="500" text-anchor="end">SYSTEM / FLOW</text>
+<polyline points="230.0,164 230.0,193.0 460.0,193.0 460.0,222" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="690.0,164 690.0,193.0 460.0,193.0 460.0,222" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="460.0,310 460.0,339.0 230.0,339.0 230.0,368" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="460.0,310 460.0,339.0 690.0,339.0 690.0,368" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="40" y="76" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="230.0" y="111" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">FMOD 채널 재생 위치</text>
+<text x="230.0" y="135" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">MusicPlayer.cs / GetMilliSec()</text>
+<rect x="500" y="76" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="690.0" y="111" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">사용자 싱크 설정</text>
+<text x="690.0" y="135" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">노트 예정 시각과 함께 사용</text>
+<rect x="270.0" y="222" width="380" height="88" rx="8" fill="#d1ddcc" stroke="#829a58"/>
+<text x="460.0" y="257" fill="#4e6512" font-size="19" font-weight="600" text-anchor="middle">같은 음악 시간을 기준으로 처리</text>
+<text x="460.0" y="281" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">판정과 위치 계산의 기준 공유</text>
+<rect x="40" y="368" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="230.0" y="403" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">입력 판정</text>
+<text x="230.0" y="427" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">시간 오차의 절댓값으로 NICE / GOOD</text>
+<rect x="500" y="368" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="690.0" y="403" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">노트 위치 다시 계산</text>
+<text x="690.0" y="427" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">노트 생성 / 배속 변경 시 적용</text>
+<path d="M34 491H886" stroke="#c7d2c3"/>
+<text x="34" y="515" fill="#57634d" font-size="12" font-weight="400" text-anchor="start">평상시 노트 이동은 Time.deltaTime 사용 / 판정과 이동 구조는 참고 프로젝트 활용</text>
+</g></svg>

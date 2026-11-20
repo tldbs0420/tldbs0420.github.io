@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="686" viewBox="0 0 920 686" role="img" aria-labelledby="title desc">
+<title id="title">플레이어가 쓰지 않는 트럭으로 은신</title><desc id="desc">경찰 등장 시 두 트럭 중 플레이어가 사용하지 않는 트럭을 선택합니다. AI는 일반 차선 선택을 중단하고 트럭 속도에 맞춰 은신한 뒤 주행을 복구합니다.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#93a77f" stroke-width="1.5"/></marker></defs>
+<defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#f4f5f4" stroke="#93a77f" stroke-width="1.5"/></marker></defs>
+<rect width="920" height="686" fill="#f4f5f4"/>
+<g font-family="Pretendard,Noto Sans KR,Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="34" y="35" fill="#16190e" font-size="20" font-weight="600" text-anchor="start">플레이어가 쓰지 않는 트럭으로 은신</text>
+<text x="886" y="35" fill="#57634d" font-size="10" font-weight="500" text-anchor="end">SYSTEM / FLOW</text>
+<polyline points="460.0,164 460.0,193.0 460.0,193.0 460.0,222" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="460.0,310 460.0,339.0 230.0,339.0 230.0,368" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="326.0" y="317.0" width="38" height="20" rx="3" fill="#f4f5f4"/>
+<text x="345.0" y="331.0" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">있음</text>
+<polyline points="460.0,310 460.0,339.0 690.0,339.0 690.0,368" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="556.0" y="317.0" width="38" height="20" rx="3" fill="#f4f5f4"/>
+<text x="575.0" y="331.0" fill="#57634d" font-size="12" font-weight="500" text-anchor="middle">없음</text>
+<polyline points="230.0,456 230.0,485.0 460.0,485.0 460.0,514" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="690.0,456 690.0,485.0 460.0,485.0 460.0,514" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="270.0" y="76" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="460.0" y="111" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">경찰 등장 / 트럭 두 대 생성</text>
+<text x="460.0" y="135" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">AI의 기존 차선 선택 중단</text>
+<polygon points="288.0,222 632.0,222 650.0,266.0 632.0,310 288.0,310 270.0,266.0" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="460.0" y="257" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">첫 트럭에 플레이어가 있는가?</text>
+<text x="460.0" y="281" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">은신할 트럭 선택</text>
+<rect x="40" y="368" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="230.0" y="403" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">두 번째 트럭 선택</text>
+<text x="230.0" y="427" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">플레이어와 은신 위치 분리</text>
+<rect x="500" y="368" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="690.0" y="403" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">첫 번째 트럭 선택</text>
+<text x="690.0" y="427" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">빈 트럭 이용</text>
+<rect x="270.0" y="514" width="380" height="88" rx="8" fill="#d1ddcc" stroke="#829a58"/>
+<text x="460.0" y="549" fill="#4e6512" font-size="19" font-weight="600" text-anchor="middle">중앙 차선으로 이동 → 속도 맞춤</text>
+<text x="460.0" y="573" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">트럭 중앙부 아래에 도달해 은신</text>
+<path d="M34 637H886" stroke="#c7d2c3"/>
+<text x="34" y="661" fill="#57634d" font-size="12" font-weight="400" text-anchor="start">은신 성공 후 원래 전진 속도와 차선 선택 코루틴 복구</text>
+</g></svg>

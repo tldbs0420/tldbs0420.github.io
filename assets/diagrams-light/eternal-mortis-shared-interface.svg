@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="540" viewBox="0 0 920 540" role="img" aria-labelledby="title desc">
+<title id="title">같은 함수로 테스트와 UI 연결</title><desc id="desc">테스트 BP와 C++ 및 BP의 게임 로직이 공개 함수를 사용하고 목록 변경과 장착 변경 이벤트로 각 UI를 갱신합니다.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7" fill="none" stroke="#93a77f" stroke-width="1.5"/></marker></defs>
+<defs><marker id="inheritance" markerWidth="13" markerHeight="13" refX="12" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 12 6.5 1 12Z" fill="#f4f5f4" stroke="#93a77f" stroke-width="1.5"/></marker></defs>
+<rect width="920" height="540" fill="#f4f5f4"/>
+<g font-family="Pretendard,Noto Sans KR,Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="34" y="35" fill="#16190e" font-size="20" font-weight="600" text-anchor="start">같은 함수로 테스트와 UI 연결</text>
+<text x="886" y="35" fill="#57634d" font-size="10" font-weight="500" text-anchor="end">SYSTEM / FLOW</text>
+<polyline points="230.0,164 230.0,193.0 460.0,193.0 460.0,222" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="690.0,164 690.0,193.0 460.0,193.0 460.0,222" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="460.0,310 460.0,339.0 230.0,339.0 230.0,368" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="460.0,310 460.0,339.0 690.0,339.0 690.0,368" fill="none" stroke="#93a77f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="40" y="76" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="230.0" y="111" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">테스트용 BP</text>
+<text x="230.0" y="135" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">조건을 정해 생성 / 추가 / 장착</text>
+<rect x="500" y="76" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="690.0" y="111" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">게임 로직 / UI</text>
+<text x="690.0" y="135" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">C++ / Blueprint에서 호출</text>
+<rect x="270.0" y="222" width="380" height="88" rx="8" fill="#d1ddcc" stroke="#829a58"/>
+<text x="460.0" y="257" fill="#4e6512" font-size="19" font-weight="600" text-anchor="middle">Subsystem의 공개 함수</text>
+<text x="460.0" y="281" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">생성 / 추가 / 장착</text>
+<rect x="40" y="368" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="230.0" y="403" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">보유 목록 변경 이벤트</text>
+<text x="230.0" y="427" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">추가와 제거 → 목록 UI 갱신</text>
+<rect x="500" y="368" width="380" height="88" rx="8" fill="#eff2ef" stroke="#b3c1ab"/>
+<text x="690.0" y="403" fill="#16190e" font-size="19" font-weight="600" text-anchor="middle">장착 슬롯 변경 이벤트</text>
+<text x="690.0" y="427" fill="#57634d" font-size="14" font-weight="400" text-anchor="middle">장착 변경 → 슬롯 UI 갱신</text>
+<path d="M34 491H886" stroke="#c7d2c3"/>
+<text x="34" y="515" fill="#57634d" font-size="12" font-weight="400" text-anchor="start">구현 설명을 요약한 개념도</text>
+</g></svg>
